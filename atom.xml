@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>Gridea</title>
-    <updated>2020-05-09T08:32:50.156Z</updated>
+    <updated>2020-05-09T08:45:30.592Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[🐱的流浪]]></title>
+        <id>https://huigz.github.io/post/de-liu-lang/</id>
+        <link href="https://huigz.github.io/post/de-liu-lang/">
+        </link>
+        <updated>2020-05-09T09:38:56.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1589013800252.jpg" alt="" loading="lazy"></figure>
+<p>4.25 首尔 城北洞</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://huigz.github.io/post/hello-gridea/</id>
