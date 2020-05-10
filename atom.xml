@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-05-09T10:30:37.163Z</updated>
+    <updated>2020-05-10T09:15:15.826Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[城墙🐱]]></title>
+        <id>https://huigz.github.io/post/cheng-qiang/</id>
+        <link href="https://huigz.github.io/post/cheng-qiang/">
+        </link>
+        <updated>2020-05-10T10:13:09.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1589102043479.jpg" alt="" loading="lazy"></figure>
+<p>2020-3-16 와룡공원</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[🐱的流浪]]></title>
         <id>https://huigz.github.io/post/de-liu-lang/</id>
