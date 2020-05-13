@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-05-13T05:20:51.260Z</updated>
+    <updated>2020-05-13T05:28:41.343Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -29,10 +29,10 @@
         <id>https://huigz.github.io/post/yi-ge-sui-yi-de-se/</id>
         <link href="https://huigz.github.io/post/yi-ge-sui-yi-de-se/">
         </link>
-        <updated>2020-05-11T17:27:22.000Z</updated>
+        <updated>2020-05-11T18:27:22.000Z</updated>
         <content type="html"><![CDATA[<p>釜山甘川文化村<br>
 부산 감천문화마을</p>
-<p><img src="https://huigz.github.io/post-images/1589214620041.jpg" alt="" loading="lazy"><br>
+<p><img src="https://huigz.github.io/post-images/1589214620041.jpg" alt="There is a photo" loading="lazy"><br>
 -2020.5.12</p>
 ]]></content>
     </entry>
@@ -41,8 +41,8 @@
         <id>https://huigz.github.io/post/cheng-qiang/</id>
         <link href="https://huigz.github.io/post/cheng-qiang/">
         </link>
-        <updated>2020-05-10T10:13:09.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1589102043479.jpg" alt="" loading="lazy"></figure>
+        <updated>2020-05-10T11:13:09.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1589102043479.jpg" alt="There is a photo" loading="lazy"></figure>
 <p>2020-3-16 와룡공원</p>
 ]]></content>
     </entry>
@@ -51,8 +51,8 @@
         <id>https://huigz.github.io/post/de-liu-lang/</id>
         <link href="https://huigz.github.io/post/de-liu-lang/">
         </link>
-        <updated>2020-05-09T09:38:56.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1589013800252.jpg" alt="" loading="lazy"></figure>
+        <updated>2020-05-09T10:38:56.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1589013800252.jpg" alt="There is a photo" loading="lazy"></figure>
 <p>4.25 首尔 城北洞</p>
 ]]></content>
     </entry>
