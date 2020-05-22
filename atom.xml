@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-05-22T07:27:05.082Z</updated>
+    <updated>2020-05-22T08:57:43.624Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -15,14 +15,14 @@
         <id>https://huigz.github.io/post/she-hui-ke-xue-diao-cha-fang-fa-huo-de-shu-ju/</id>
         <link href="https://huigz.github.io/post/she-hui-ke-xue-diao-cha-fang-fa-huo-de-shu-ju/">
         </link>
-        <updated>2020-05-22T08:23:43.000Z</updated>
+        <updated>2020-05-22T09:23:43.000Z</updated>
         <content type="html"><![CDATA[<h1 id="data-generation">Data generation</h1>
 <ul>
 <li>primary data</li>
 <li>secondary data</li>
 </ul>
 <p>primary data : 研究人员通过 survey, interview ... 获取的 first-hand sources.</p>
-<p>secondary data : 从其他人/机构获取的数据 ep : government statistics</p>
+<p>secondary data : 从其他人/机构获取的数据 eg : government statistics</p>
 <h2 id="type-of-survey">Type of survey</h2>
 <h3 id="what-is-survey">What is survey?</h3>
 <p>Survey is the process of collecting data through a questionnaire that asks <em><strong>individuals the same questions</strong></em></p>
@@ -76,7 +76,7 @@
 <h3 id="1-operationalize-concepts-概念运用">1. Operationalize concepts 概念运用</h3>
 <p><em><strong>Turning abstract concepts into measurable variables</strong></em></p>
 <p>将抽象概念转化为可测量的变量</p>
-<p>ep :</p>
+<p>eg :</p>
 <p><em>腐败 : 主观概念 -&gt; 寻找定义 -&gt; 通过媒体曝光的政客非法活动的事件/报道 数量 -&gt; 客观统计</em></p>
 <h3 id="2-formulate-your-questions-明确问题">2. Formulate your questions 明确问题</h3>
 <p>避免 复杂 / 双管齐下 / 模糊 / 引导性问题</p>
@@ -86,7 +86,7 @@
 <li>Closed responses 封闭式回应</li>
 <li>Open responses 开放式回应</li>
 </ul>
-<p>Closed responses ep : Likert scale</p>
+<p>Closed responses eg : Likert scale</p>
 <p>Open responses : answer using own words</p>
 <h3 id="likert-scale-李克特量表">likert scale 李克特量表</h3>
 <ul>
@@ -104,7 +104,7 @@
 <p>不宜超过20分钟 不宜太长/短</p>
 <p><strong>organization</strong></p>
 <p>不以威胁/困难/尴尬/敏感等复杂问题作为开头</p>
-<p>ep : 以收入问题作为调查开头</p>
+<p>eg : 以收入问题作为调查开头</p>
 <p><strong>问题顺序的影响:</strong></p>
 <p>Primacy Effect : 答题者倾向第一选择 (paple / online survey)</p>
 <p>Recency Effect : 答题者倾向于听到的最近的选择 (face to face / telephone survey)</p>
