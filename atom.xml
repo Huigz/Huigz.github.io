@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-05-28T18:02:35.027Z</updated>
+    <updated>2020-05-28T18:13:19.162Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[电影<辩护人>取景地 釜山旅行🌊]]></title>
+        <id>https://huigz.github.io/post/dian-ying-lessbian-hu-ren-greaterqu-jing-di-fu-shan-lu-xing/</id>
+        <link href="https://huigz.github.io/post/dian-ying-lessbian-hu-ren-greaterqu-jing-di-fu-shan-lu-xing/">
+        </link>
+        <updated>2020-05-28T20:04:51.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1590689300768.jpg" alt="바다" loading="lazy"></figure>
+<ul>
+<li>흰여울문화마을 2020.05.12</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[社会科学调查方法] 获得数据 📃]]></title>
         <id>https://huigz.github.io/post/she-hui-ke-xue-diao-cha-fang-fa-huo-de-shu-ju/</id>
@@ -113,25 +125,11 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[🌊]]></title>
-        <id>https://huigz.github.io/post/</id>
-        <link href="https://huigz.github.io/post/">
-        </link>
-        <updated>2020-05-13T06:15:02.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1589346997723.jpg" alt="" loading="lazy"></figure>
-<ul>
-<li>흰혀울문화마을</li>
-<li>영화[변호인] 촬용지</li>
-<li>2020.5.12</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[一个随意的 🍭色]]></title>
         <id>https://huigz.github.io/post/yi-ge-sui-yi-de-se/</id>
         <link href="https://huigz.github.io/post/yi-ge-sui-yi-de-se/">
         </link>
-        <updated>2020-05-11T19:27:22.000Z</updated>
+        <updated>2020-05-11T20:27:22.000Z</updated>
         <content type="html"><![CDATA[<p>釜山甘川文化村<br>
 부산 감천문화마을</p>
 <p><img src="https://huigz.github.io/post-images/1589214620041.jpg" alt="There is a photo" loading="lazy"><br>
