@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-05-28T18:34:34.390Z</updated>
+    <updated>2020-05-30T12:22:35.011Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,57 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[心理学归因理论 —协方差模型]]></title>
+        <id>https://huigz.github.io/post/xin-li-xue-gui-yin-li-lun-xie-fang-chai-mo-xing/</id>
+        <link href="https://huigz.github.io/post/xin-li-xue-gui-yin-li-lun-xie-fang-chai-mo-xing/">
+        </link>
+        <updated>2020-05-30T12:50:11.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="归因理论-协方差模型">归因理论 ——协方差模型</h1>
+<h2 id="协方差模型-covariation-model">协方差模型 Covariation model</h2>
+<p>—— 哈罗德·凯利（Harold Kelley）</p>
+<hr>
+<p><strong>归因标准:</strong></p>
+<ul>
+<li>共识</li>
+<li>独特性</li>
+<li>一致性</li>
+</ul>
+<p><strong>归因结论:</strong></p>
+<ul>
+<li>内部个人</li>
+<li>外部刺激</li>
+</ul>
+<hr>
+<h3 id="共识"><em>共识</em></h3>
+<p>指不同人行为的共同变化</p>
+<p>共识高 -&gt; 归因为外部刺激<br>
+共识低 -&gt; 归因为内部个人</p>
+<p>eg.</p>
+<p>许多人认为lisa漂亮 -&gt; 人们归因为外部刺激(lisa)</p>
+<p>只有Tom认为lisa漂亮 -&gt; 人们归因为内部个人(Tom)</p>
+<h3 id="独特性"><em>独特性</em></h3>
+<p>情况变化下人行为与平时行为差异程度<br>
+(一般行为还是仅针对某特情况的行为)</p>
+<p>情形下人行为差异小 -&gt; 独特性低 -&gt; 归因为内部个人<br>
+清形下人行为差异大 -&gt; 独特性高 -&gt; 归因为外界刺激</p>
+<p>eg.</p>
+<p>lisa不喜欢所有浪漫电影 -&gt; lisa喜欢泰坦尼克号 -&gt; 独特性高 -&gt; 归因为外部因素(泰坦尼克号)</p>
+<p>lisa不喜欢所有浪漫电影 -&gt; lisa不喜欢泰坦尼克号 -&gt; 独特性低 -&gt; 归因为lisa个人</p>
+<h3 id="一致性"><em>一致性</em></h3>
+<p>随时间的协变 行为的一致程度</p>
+<p>eg.</p>
+<p>lisa一直很谦虚 -&gt; 一致性高 -&gt; 归因为个人(lisa很慷慨)</p>
+<p>lisa只有在面试的时候很谦虚 平时不谦虚 -&gt; 一致性低 -&gt; 归因为外部刺激(面试使lisa谦虚)</p>
+<hr>
+<h3 id="归因模型"><strong>归因模型</strong></h3>
+<ul>
+<li>低共识，低独特性，高一致性=个人归因</li>
+<li>高共识，高独特性，高一致性=激励归因</li>
+<li>高共识，低独特性，低一致性=情境归因</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[电影<辩护人>取景地 釜山🌊]]></title>
         <id>https://huigz.github.io/post/dian-ying-lessbian-hu-ren-greaterqu-jing-di-fu-shan-lu-xing/</id>
