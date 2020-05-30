@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-05-30T12:22:35.011Z</updated>
+    <updated>2020-05-30T12:35:13.305Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -15,8 +15,11 @@
         <id>https://huigz.github.io/post/xin-li-xue-gui-yin-li-lun-xie-fang-chai-mo-xing/</id>
         <link href="https://huigz.github.io/post/xin-li-xue-gui-yin-li-lun-xie-fang-chai-mo-xing/">
         </link>
-        <updated>2020-05-30T12:50:11.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="归因理论-协方差模型">归因理论 ——协方差模型</h1>
+        <updated>2020-05-30T15:50:11.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>哈罗德·凯利（Harold Kelley）的协变量模型是一种归因理论，人们在其中进行因果推断，以解释为什么其他人和我们自己以某种方式行事。它与社会感知和自我感知有关（Kelley，1973）。</p>
+</blockquote>
+<h1 id="归因理论-协方差模型">归因理论 ——协方差模型</h1>
 <h2 id="协方差模型-covariation-model">协方差模型 Covariation model</h2>
 <p>—— 哈罗德·凯利（Harold Kelley）</p>
 <hr>
