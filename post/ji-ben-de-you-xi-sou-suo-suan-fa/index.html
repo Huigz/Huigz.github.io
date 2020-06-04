@@ -1,0 +1,275 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>基本的游戏搜索算法 | huigz&#39;s Blog</title>
+<link rel="shortcut icon" href="https://huigz.github.io/favicon.ico?v=1591274163829">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://huigz.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="基本的游戏搜索算法 | huigz&#39;s Blog - Atom Feed" href="https://huigz.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167446470-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167446470-1');
+</script>
+
+
+    <meta name="description" content="Search in Game
+Game state tree
+双方对战游戏中，模拟自我和对手可能的游戏状态
+应用场景
+
+自我顺序选择的最有利选择的状态是对手最不利状态
+分析越多的状态越有利
+
+Mini-Max 算法
+术语：
+
+Max nod..." />
+    <meta name="keywords" content="蒙特卡洛树,AI人工智能,Mini-Max算法,Alpha-beta算法" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://huigz.github.io">
+  <img class="avatar" src="https://huigz.github.io/images/avatar.png?v=1591274163829" alt="">
+  </a>
+  <h1 class="site-title">
+    huigz&#39;s Blog
+  </h1>
+  <p class="site-description">
+    Call me now
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Homepage
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          About me
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              基本的游戏搜索算法
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-06-04
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://huigz.github.io/tag/NaxmuDM2-/" class="post-tag">
+                  # 蒙特卡洛树
+                </a>
+              
+                <a href="https://huigz.github.io/tag/0_46yD_dem/" class="post-tag">
+                  # AI人工智能
+                </a>
+              
+                <a href="https://huigz.github.io/tag/CKjmsVAR6w/" class="post-tag">
+                  # Mini-Max算法
+                </a>
+              
+                <a href="https://huigz.github.io/tag/_67wdD9OqZ/" class="post-tag">
+                  # Alpha-beta算法
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://huigz.github.io/post-images/ji-ben-de-you-xi-sou-suo-suan-fa.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="search-in-game">Search in Game</h1>
+<h2 id="game-state-tree">Game state tree</h2>
+<p>双方对战游戏中，模拟自我和对手可能的游戏状态</p>
+<p>应用场景</p>
+<ul>
+<li>自我顺序选择的最有利选择的状态是对手最不利状态</li>
+<li>分析越多的状态越有利</li>
+</ul>
+<h3 id="mini-max-算法">Mini-Max 算法</h3>
+<p>术语：</p>
+<ul>
+<li>Max node: 最大值节点 指自我顺序最优选择</li>
+<li>Min node: 最小值节点 指对方最优选择(相对自我最坏选择)</li>
+</ul>
+<p>方法:</p>
+<p>从端末节点计算分数，向上层节点递推，得出顶端节点可选择的最优值.</p>
+<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1591272724833.png" alt="minimax" loading="lazy"></figure>
+<p>缺陷：</p>
+<p>每种状态下有n种选择，x步后，将出现n的x次方种选择。计算量过于庞大.</p>
+<h3 id="alpha-beta-算法">Alpha-Beta 算法</h3>
+<p>Mini-Max算法的改良 又称剪枝算法 即排除不必要的节点</p>
+<p>Mini-Max算法向上递推的过程中，根据对方和自我的最坏最优解逻辑，当子节点分数给出时，可推断出父节点的规则.</p>
+<figure data-type="image" tabindex="2"><img src="https://huigz.github.io/post-images/1591272840628.png" alt="alphabeta" loading="lazy"></figure>
+<p>方法:</p>
+<ul>
+<li>alpha cut-off: Min-node状态下，当前节点值&lt;=父节点时 当前子节点探索中断</li>
+<li>beta cut-off: Max-node状态下，当前节点值&gt;=父节点时 当前子节点探索中断</li>
+</ul>
+<h3 id="mcts-蒙特卡洛树算法">MCTS 蒙特卡洛树算法</h3>
+<p><strong>UCT：选择展开和回溯的决策算法</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://huigz.github.io/post-images/1591273176684.png" alt="UCT" loading="lazy"></figure>
+<p><strong>Eg</strong></p>
+<figure data-type="image" tabindex="4"><img src="https://huigz.github.io/post-images/1591273276702.png" alt="UCTEg" loading="lazy"></figure>
+<p>过程：</p>
+<hr>
+<ol>
+<li>选择</li>
+<li>展开（确定模拟节点）</li>
+<li>模拟（评价）</li>
+<li>回溯</li>
+</ol>
+<hr>
+<p>解释：</p>
+<ol>
+<li>
+<p>选择UCT值最高的节点，为展开节点的UCT值为无限大</p>
+</li>
+<li>
+<p>在被选择的节点种，选择一个未被访问过的子节点，展开</p>
+</li>
+<li>
+<p>从新展开的节点开始，随机游戏（模拟），直到游戏结束，得到游戏结果</p>
+</li>
+<li>
+<p>将随机模拟的游戏结果回溯给父节点，重新计算所有的UCT值</p>
+</li>
+</ol>
+<hr>
+<figure data-type="image" tabindex="5"><img src="https://huigz.github.io/post-images/1591273356891.png" alt="MCTS" loading="lazy"></figure>
+<p>根据探索时间的限制 算法停止探索时 最后根据UCT的值作出最优选择</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#search-in-game">Search in Game</a>
+<ul>
+<li><a href="#game-state-tree">Game state tree</a>
+<ul>
+<li><a href="#mini-max-%E7%AE%97%E6%B3%95">Mini-Max 算法</a></li>
+<li><a href="#alpha-beta-%E7%AE%97%E6%B3%95">Alpha-Beta 算法</a></li>
+<li><a href="#mcts-%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91%E7%AE%97%E6%B3%95">MCTS 蒙特卡洛树算法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://huigz.github.io/post/yi-qing-qi-jian-fan-dui-liu-xue-sheng-hui-guo-yu-lun-de-she-hui-xin-li-xue-fen-xi/">
+              <h3 class="post-title">
+                疫情期间反对留学生回国舆论的社会心理学分析
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://huigz.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

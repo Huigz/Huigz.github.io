@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-05-31T11:11:06.290Z</updated>
+    <updated>2020-06-04T12:36:08.858Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,74 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[基本的游戏搜索算法]]></title>
+        <id>https://huigz.github.io/post/ji-ben-de-you-xi-sou-suo-suan-fa/</id>
+        <link href="https://huigz.github.io/post/ji-ben-de-you-xi-sou-suo-suan-fa/">
+        </link>
+        <updated>2020-06-04T13:05:41.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="search-in-game">Search in Game</h1>
+<h2 id="game-state-tree">Game state tree</h2>
+<p>双方对战游戏中，模拟自我和对手可能的游戏状态</p>
+<p>应用场景</p>
+<ul>
+<li>自我顺序选择的最有利选择的状态是对手最不利状态</li>
+<li>分析越多的状态越有利</li>
+</ul>
+<h3 id="mini-max-算法">Mini-Max 算法</h3>
+<p>术语：</p>
+<ul>
+<li>Max node: 最大值节点 指自我顺序最优选择</li>
+<li>Min node: 最小值节点 指对方最优选择(相对自我最坏选择)</li>
+</ul>
+<p>方法:</p>
+<p>从端末节点计算分数，向上层节点递推，得出顶端节点可选择的最优值.</p>
+<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1591272724833.png" alt="minimax" loading="lazy"></figure>
+<p>缺陷：</p>
+<p>每种状态下有n种选择，x步后，将出现n的x次方种选择。计算量过于庞大.</p>
+<h3 id="alpha-beta-算法">Alpha-Beta 算法</h3>
+<p>Mini-Max算法的改良 又称剪枝算法 即排除不必要的节点</p>
+<p>Mini-Max算法向上递推的过程中，根据对方和自我的最坏最优解逻辑，当子节点分数给出时，可推断出父节点的规则.</p>
+<figure data-type="image" tabindex="2"><img src="https://huigz.github.io/post-images/1591272840628.png" alt="alphabeta" loading="lazy"></figure>
+<p>方法:</p>
+<ul>
+<li>alpha cut-off: Min-node状态下，当前节点值&lt;=父节点时 当前子节点探索中断</li>
+<li>beta cut-off: Max-node状态下，当前节点值&gt;=父节点时 当前子节点探索中断</li>
+</ul>
+<h3 id="mcts-蒙特卡洛树算法">MCTS 蒙特卡洛树算法</h3>
+<p><strong>UCT：选择展开和回溯的决策算法</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://huigz.github.io/post-images/1591273176684.png" alt="UCT" loading="lazy"></figure>
+<p><strong>Eg</strong></p>
+<figure data-type="image" tabindex="4"><img src="https://huigz.github.io/post-images/1591273276702.png" alt="UCTEg" loading="lazy"></figure>
+<p>过程：</p>
+<hr>
+<ol>
+<li>选择</li>
+<li>展开（确定模拟节点）</li>
+<li>模拟（评价）</li>
+<li>回溯</li>
+</ol>
+<hr>
+<p>解释：</p>
+<ol>
+<li>
+<p>选择UCT值最高的节点，为展开节点的UCT值为无限大</p>
+</li>
+<li>
+<p>在被选择的节点种，选择一个未被访问过的子节点，展开</p>
+</li>
+<li>
+<p>从新展开的节点开始，随机游戏（模拟），直到游戏结束，得到游戏结果</p>
+</li>
+<li>
+<p>将随机模拟的游戏结果回溯给父节点，重新计算所有的UCT值</p>
+</li>
+</ol>
+<hr>
+<figure data-type="image" tabindex="5"><img src="https://huigz.github.io/post-images/1591273356891.png" alt="MCTS" loading="lazy"></figure>
+<p>根据探索时间的限制 算法停止探索时 最后根据UCT的值作出最优选择</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[疫情期间反对留学生回国舆论的社会心理学分析]]></title>
         <id>https://huigz.github.io/post/yi-qing-qi-jian-fan-dui-liu-xue-sheng-hui-guo-yu-lun-de-she-hui-xin-li-xue-fen-xi/</id>
