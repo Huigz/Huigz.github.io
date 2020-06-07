@@ -1,132 +1,160 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>基本的游戏搜索算法 | huigz&#39;s Blog</title>
-<link rel="shortcut icon" href="https://huigz.github.io/favicon.ico?v=1591274163829">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://huigz.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="基本的游戏搜索算法 | huigz&#39;s Blog - Atom Feed" href="https://huigz.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<!DOCTYPE html>
+<html lang="zh-CN">
 
+<head>
+  <meta charset="UTF-8" />
+<title>基本的游戏搜索算法 - huigz&#39;s Blog</title>
+<meta name="description" content="Call me now">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167446470-1"></script>
+<link type='text/css' rel='stylesheet' href='https://huigz.github.io/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src='https://huigz.github.io/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-167446470-1');
+    hljs.initHighlightingOnLoad();
 </script>
+</head>
+
+<body>
+  <div class="layout theme-dark">
+    <div class="layout-header">
+
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+
+					<div class="navbar">
+
+						<div class="logo">
+							<a href="https://huigz.github.io">
+								<img class="logo"
+									src="https://huigz.github.io/media/images/site_avatar.png?v=1591532834972"
+									alt="">
+							</a>
+						</div>
+
+						<div class="menu d-md-inline-block d-none">
+							<ul class="layout-navigation-list">
+								
+								<li class="layout-navigation-item"><a title="Homepage"
+										href="/">Homepage</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="归档"
+										href="/archives">归档</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="标签"
+										href="/tags">标签</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="About me"
+										href="/post/about">About me</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="item d-md-inline-block d-none">
+							<div class="search-icon">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
 
 
-    <meta name="description" content="Search in Game
-Game state tree
-双方对战游戏中，模拟自我和对手可能的游戏状态
-应用场景
 
-自我顺序选择的最有利选择的状态是对手最不利状态
-分析越多的状态越有利
+						<div class="d-md-inline-block d-none">
+							<div class="search-lightbox">
+								<div class="search-body">
 
-Mini-Max 算法
-术语：
+									<form id="gridea-search-form" data-update="1591532834972" action="/search/" class="search-form">
+										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
+										<button type="submit" class="submit" aria-label="Submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</form>
 
-Max nod..." />
-    <meta name="keywords" content="蒙特卡洛树,AI人工智能,Mini-Max算法,Alpha-beta算法" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://huigz.github.io">
-  <img class="avatar" src="https://huigz.github.io/images/avatar.png?v=1591274163829" alt="">
-  </a>
-  <h1 class="site-title">
-    huigz&#39;s Blog
-  </h1>
-  <p class="site-description">
-    Call me now
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          Homepage
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          About me
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
+								</div>
+							</div>
+						</div>
+
+						<div class="nav d-md-none d-inline-block">
+							<div class="trigger">
+								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+</div>
+    <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="Homepage" href="/">Homepage</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
+			
+			<li class="layout-collapse-item"><a title="About me" href="/post/about">About me</a></li>
+			
+
+		</ul>
+	</div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              基本的游戏搜索算法
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-06-04
-              </span>
-              <span>
-                2 min read
-              </span>
-              
-                <a href="https://huigz.github.io/tag/NaxmuDM2-/" class="post-tag">
-                  # 蒙特卡洛树
-                </a>
-              
-                <a href="https://huigz.github.io/tag/0_46yD_dem/" class="post-tag">
-                  # AI人工智能
-                </a>
-              
-                <a href="https://huigz.github.io/tag/CKjmsVAR6w/" class="post-tag">
-                  # Mini-Max算法
-                </a>
-              
-                <a href="https://huigz.github.io/tag/_67wdD9OqZ/" class="post-tag">
-                  # Alpha-beta算法
-                </a>
-              
-            </div>
-            
-              <img class="post-feature-image" src="https://huigz.github.io/post-images/ji-ben-de-you-xi-sou-suo-suan-fa.jpg" alt="">
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h1 id="search-in-game">Search in Game</h1>
+    <div class="layout-content">
+      <div class="layout-content-main">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-9">
+              <div class="layout-post">
+                <div class="layout-post-body">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-10">
+                      <div class="layout-post-main m-right m-md-right">
+                        <div class="layout-post-header">
+                          <h1 class="layout-post-title">基本的游戏搜索算法</h1>
+                          <div class="layout-post-meta">
+                            <div class="item">
+                               <a href="https://huigz.github.io/tag/NaxmuDM2-/" class="post--keyword"
+                                data-title="蒙特卡洛树" data-type="post_tag" data-term-id="39">蒙特卡洛树</a>
+                               <a href="https://huigz.github.io/tag/0_46yD_dem/" class="post--keyword"
+                                data-title="AI人工智能" data-type="post_tag" data-term-id="39">AI人工智能</a>
+                               <a href="https://huigz.github.io/tag/CKjmsVAR6w/" class="post--keyword"
+                                data-title="Mini-Max算法" data-type="post_tag" data-term-id="39">Mini-Max算法</a>
+                               <a href="https://huigz.github.io/tag/_67wdD9OqZ/" class="post--keyword"
+                                data-title="Alpha-beta算法" data-type="post_tag" data-term-id="39">Alpha-beta算法</a>
+                              
+                            </div>
+                            <div class="item">
+                              <span>2020-06-04</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layout-post-content">
+                          <div class="layout-post-item">
+                            
+                            <p class="with-img"><img src="https://huigz.github.io/post-images/ji-ben-de-you-xi-sou-suo-suan-fa.jpg"
+                                class="attachment-full size-full wp-post-image" alt="基本的游戏搜索算法" /></p>
+                            
+                            <h1 id="search-in-game">Search in Game</h1>
 <h2 id="game-state-tree">Game state tree</h2>
 <p>双方对战游戏中，模拟自我和对手可能的游戏状态</p>
 <p>应用场景</p>
@@ -187,9 +215,63 @@ Max nod..." />
 <figure data-type="image" tabindex="5"><img src="https://huigz.github.io/post-images/1591273356891.png" alt="MCTS" loading="lazy"></figure>
 <p>根据探索时间的限制 算法停止探索时 最后根据UCT的值作出最优选择</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
+                          </div>
+                        </div>
+                        <div class="layout-post-social">
+                          <div class="item reader">
+                            <div id="/post/ji-ben-de-you-xi-sou-suo-suan-fa/" class="leancloud-visitors view"
+                              data-flag-title="基本的游戏搜索算法">
+                              <span class="post-meta-item-text">阅读 </span>
+                              <span class="leancloud-visitors-count"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="layout-post-navigation">
+                          <div class="navigation-list">
+                            
+                            <div class="post-card row">
+                              
+                              <div class="card-content col-8 col-md-9">
+                                <div class="card-body">
+                                  <div class="header">
+                                    <a href="https://huigz.github.io/post/yi-qing-qi-jian-fan-dui-liu-xue-sheng-hui-guo-yu-lun-de-she-hui-xin-li-xue-fen-xi/" class="title">
+                                      <h4>疫情期间反对留学生回国舆论的社会心理学分析</h4>
+                                    </a>
+                                  </div>
+                                  <div class="inner d-none d-sm-block">
+                                    <div class="abstract">
+                                      <p>政府3月15日宣布，所有从境外抵达北京的旅客一律需要被集中隔离14天，并且需要自费。3月17日 上海市亦宣布对来自多个重点国家的旅客实行居家或集中隔离。从海外前往中国的旅客中，有相当数量是中国在海外的留学生。很多留学生在社交媒体上创建了“回国群”，组团抢购机票。但在中国社交媒体上，出现多起因海外人员回国而引发的争议。</p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="item"><span>下一篇</span></div>
+                                  <div class="item">2020-05-31</div>
+                                </div>
+                              </div>
+                              <div class="card-thumb col-4 col-md-3">
+                                <div class="thumb">
+                                  <a href="https://huigz.github.io/post/yi-qing-qi-jian-fan-dui-liu-xue-sheng-hui-guo-yu-lun-de-she-hui-xin-li-xue-fen-xi/"
+                                    style="background-image: url('https://huigz.github.io/post-images/yi-qing-qi-jian-fan-dui-liu-xue-sheng-hui-guo-yu-lun-de-she-hui-xin-li-xue-fen-xi.jpg');"></a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="layout-comments"></div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-2 d-none d-lg-block">
+                      <div class="layout-post-sidebar">
+                        <div class="layout-sidebar-item">
+                          <ul class="markdownIt-TOC">
 <li><a href="#search-in-game">Search in Game</a>
 <ul>
 <li><a href="#game-state-tree">Game state tree</a>
@@ -203,73 +285,70 @@ Max nod..." />
 </li>
 </ul>
 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </article>
-        </div>
-
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://huigz.github.io/post/yi-qing-qi-jian-fan-dui-liu-xue-sheng-hui-guo-yu-lun-de-she-hui-xin-li-xue-fen-xi/">
-              <h3 class="post-title">
-                疫情期间反对留学生回国舆论的社会心理学分析
-              </h3>
-            </a>
           </div>
-        
-
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://huigz.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
+        </div>
       </div>
     </div>
 
-    <script>
-      hljs.initHighlightingOnLoad()
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+    	<div class="layout-footer">
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+					<div class="footer">
+						<div class="row">
+							<div class="col-12 col-md-9">
+								<div class="footer-copy">
+									
+									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+									<div class="footer-icp d-none d-sm-inline-block">
+										<span class="px-2">⋅</span>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 d-none d-md-block">
+								<div class="footer-links">
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
+	</div>
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+	<script type="text/javascript" src='https://huigz.github.io/media/scripts/main.js'></script>
+	
 
-    </script>
-  </body>
+  </div>
+</body>
+
 </html>
