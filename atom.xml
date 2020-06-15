@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-06-15T12:46:27.008Z</updated>
+    <updated>2020-06-15T13:08:34.974Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,31 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[社会学的形成之斯宾塞]]></title>
+        <id>https://huigz.github.io/post/she-hui-xue-de-xing-cheng-zhi-si-bin-sai/</id>
+        <link href="https://huigz.github.io/post/she-hui-xue-de-xing-cheng-zhi-si-bin-sai/">
+        </link>
+        <updated>2020-06-15T13:57:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>谈到社会学的形成，斯宾塞是继孔德之后的争议人物。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>谈到社会学的形成，斯宾塞是继孔德之后的争议人物。</p>
+<!-- more -->
+<h1 id="社会学的形成-斯宾塞">社会学的形成 —斯宾塞</h1>
+<p>斯宾塞（Herbert Spencer，1820-1903），出生于英格兰的德比，出生于一个非国教徒家庭，因此无法接受官方教育的学习，但是他从父亲和亲戚那里接受了扎实的家庭教育。</p>
+<p>斯宾塞在伦敦的一个俱乐部与当代学者互动，因没有受到正规教育，使他摆脱了学校风格的束缚，拥有自由的倾向构想了&quot;综合哲学&quot;。</p>
+<h3 id="意识形态的影响和贡献">意识形态的影响和贡献</h3>
+<p>斯宾塞显然很少读过任何现有的学术著作，但肯定受到了*托马斯·马尔萨斯 *的《人口理论》的影响。在此基础上，他探索了<strong>适者生存</strong>和<strong>自然淘汰</strong>的含义并影响了查尔斯·达尔文的《物种起源》。(在社会达尔文主义方面的重要著作《进步：法则和原因》比达尔文的《物种起源》还早两年出版)</p>
+<p>此外，在亚当·斯密（Adam Smith）的《国富论》的影响下，<strong>斯宾塞（Spencer）提倡自由主义（自由贸易，市场开放，排斥政府干涉）</strong>。</p>
+<h3 id="斯宾塞的社会进化讨论">斯宾塞的社会进化讨论</h3>
+<blockquote>
+<p>未进化的构造会过渡到以相互依存为特征进化构造。</p>
+</blockquote>
+<h3 id="对现代社会学的影响">对现代社会学的影响</h3>
+<p>适者生存，优胜劣汰和自由主义在进入20世纪后被批判</p>
+<p>社会进化构造和对相互依存的强调与孔德的有机社会隐喻类似，被视为社会学的基石。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[古典社会学理论之涂尔干]]></title>
         <id>https://huigz.github.io/post/gu-dian-she-hui-xue-li-lun-zhi-tu-er-gan/</id>
@@ -154,7 +179,7 @@
         <id>https://huigz.github.io/post/gu-dian-she-hui-xue-li-lun-zhi-ma-ke-si/</id>
         <link href="https://huigz.github.io/post/gu-dian-she-hui-xue-li-lun-zhi-ma-ke-si/">
         </link>
-        <updated>2020-06-14T19:17:49.000Z</updated>
+        <updated>2020-06-14T20:17:49.000Z</updated>
         <summary type="html"><![CDATA[<p>介绍了马克思的生平和社会学理论。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>介绍了马克思的生平和社会学理论。</p>
@@ -260,11 +285,11 @@ D --&gt; E(共产主义社会)
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[社会学的形成和Comte]]></title>
+        <title type="html"><![CDATA[社会学的形成和孔德Comte]]></title>
         <id>https://huigz.github.io/post/she-hui-xue-de-xing-cheng-he-comte/</id>
         <link href="https://huigz.github.io/post/she-hui-xue-de-xing-cheng-he-comte/">
         </link>
-        <updated>2020-06-13T19:34:31.000Z</updated>
+        <updated>2020-06-13T20:34:31.000Z</updated>
         <summary type="html"><![CDATA[<p>19世纪始于欧洲工业主义的社会学和创造了&quot;社会学&quot;这一称呼的启蒙主义继承者Comte</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>19世纪始于欧洲工业主义的社会学和创造了&quot;社会学&quot;这一称呼的启蒙主义继承者Comte</p>
@@ -690,18 +715,6 @@ temp1 := <span class="katex"><span class="katex-mathml"><math><semantics><mrow><
 <p>Recency Effect : 答题者倾向于听到的最近的选择 (face to face / telephone survey)</p>
 <h3 id="6-create-aesthetically-pleasing-layout-and-desig-创造美观的布局和设计">6. Create aesthetically pleasing layout and desig 创造美观的布局和设计</h3>
 <p>美观 简洁 专业</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一个随意的 🍭色]]></title>
-        <id>https://huigz.github.io/post/yi-ge-sui-yi-de-se/</id>
-        <link href="https://huigz.github.io/post/yi-ge-sui-yi-de-se/">
-        </link>
-        <updated>2020-05-11T20:27:22.000Z</updated>
-        <content type="html"><![CDATA[<p>釜山甘川文化村<br>
-부산 감천문화마을</p>
-<p><img src="https://huigz.github.io/post-images/1589214620041.jpg" alt="There is a photo" loading="lazy"><br>
--2020.5.12</p>
 ]]></content>
     </entry>
 </feed>
