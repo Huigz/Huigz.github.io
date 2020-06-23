@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-<title>huigz&#39;s Blog</title>
+<title>摄影 - huigz&#39;s Blog</title>
 <meta name="description" content="Call me now">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -17,14 +17,12 @@
 <script>
     hljs.initHighlightingOnLoad();
 </script>
-    <script src="/media/search/fuse.js"></script>
-    <script src="/media/search/ejs.min.js"></script>
-    <script src="/media/search/gridea-search.js"></script>
-    <script src="/media/search/result.ejs" type="text/ejs"></script>
 </head>
 
 <body>
+
     <div class="layout theme-dark">
+
         <div class="layout-header">
 
 	<div class="layout-header-main">
@@ -105,6 +103,7 @@
 	</div>
 
 </div>
+
         <div class="layout-collapse d-md-none">
 	<div class="layout-collapse-main">
 		<ul class="layout-collapse-list">
@@ -122,37 +121,113 @@
 	</div>
 </div>
 
-        <div class="layout-content">
-            <div class="layout-content-main">
-                <div class="container">
-                    <div class="row justify-content-lg-center">
-                        <div class="col-12 col-lg-9">
-                            <div id="gridea-search-result" class="layout-archive">
+        
 
-                                <div class="card searching">
-                                    <div class="card-header">
-                                        <div class="header-content">
-                                            <div class="title">搜索中......</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card no-result" style="display:none">
-                                    <div class="card-header">
-                                        <div class="header-content">
-                                            <div class="title">未搜索到相关文章</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+<div class="layout-nav" style="background-image: url('')">
+  <div class="container">
+    <div class="row justify-content-lg-center">
+      <div class="col-12 col-lg-9">
+        <div class="nav-content">
+          <h1>摄影</h1>
+          <div class="sub-title"># 标签</div>
         </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+        <div class="layout-content">
+  <div class="layout-content-main">
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-lg-9">
+          <div class="card-list">
+            
+            
+            <article class="card">
+              <div class="card-item row">
+                
+                  <div class="card-content col-12">
+                    <div class="card-body">
+                      <div class="header">
+                        <a class="title" href="https://huigz.github.io/yi-ge-sui-yi-de-se/">
+                          <h3>一个随意的 🍭色</h3>
+                        </a>
+                      </div>
+                      <div class="inner">
+                        <div class="abstract">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="item">
+                        
+                        <a href="https://huigz.github.io/-u-hGZNZn/" class="tag" data-title="摄影">
+                          摄影
+                        </a>
+                        
+                        <a href="https://huigz.github.io/jTuF8aUSFs/" class="tag" data-title="旅行">
+                          旅行
+                        </a>
+                        
+                      </div>
+                      <div class="item">2020-05-12</div>
+                    </div>
+                  </div>
+                
+              </div>
+            </article>
+            
+            
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  //点击加载更多
+  jQuery(document).ready(function ($) {
+    //点击下一页的链接(即那个a标签)
+    $(' .btn-paginator').click(function () {
+      $this = $(this);
+      $this.addClass('loading').text('正在加载'); //给a标签加载一个loading的class属性，用来添加加载效果
+      var href = $this.attr('href'); //获取下一页的链接地址
+      if (href != undefined) { //如果地址存在
+        $.ajax({ //发起ajax请求
+          url: href,
+          //请求的地址就是下一页的链接
+          type: 'get',
+          //请求类型是get
+          error: function (request) {
+            //如果发生错误怎么处理
+          },
+          success: function (data) { //请求成功
+            $this.removeClass('loading').text('加载更多'); //移除loading属性
+            var $res = $(data).find('.card'); //从数据中挑出文章数据，请根据实际情况更改
+            $('.card-list').append($res.fadeIn(
+              500)); //将数据加载加进posts-loop的标签中。
+            var newhref = $(data).find('.btn-paginator').attr('href'); //找出新的下一页链接
+            if (newhref != undefined) {
+              $('.btn-paginator').attr('href', newhref);
+            } else {
+              $('.btn-paginator').remove(); //如果没有下一页了，隐藏
+            }
+          }
+        });
+      }
+      return false;
+    });
+  });
+</script>
 
         	<div class="layout-footer">
 
