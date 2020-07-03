@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-07-02T16:56:12.074Z</updated>
+    <updated>2020-07-03T14:59:03.635Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -11,12 +11,14 @@
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
     <entry>
-        <title type="html"><![CDATA[Python教程_W2_基本数据类型]]></title>
-        <id>https://huigz.github.io/-_DCTCGbE/</id>
-        <link href="https://huigz.github.io/-_DCTCGbE/">
+        <title type="html"><![CDATA[Python基础入门教程]]></title>
+        <id>https://huigz.github.io/bsHIn6Jga/</id>
+        <link href="https://huigz.github.io/bsHIn6Jga/">
         </link>
-        <updated>2020-07-02T18:50:37.000Z</updated>
-        <content type="html"><![CDATA[<center><embed src="/media/W2_数据类型.pdf" width="850" height="600"></center>]]></content>
+        <updated>2020-07-03T15:56:54.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.notion.so/Python-45b7cedab27744fe9b94156ecc4d8f65</p>
+<figure data-type="image" tabindex="1"><img src="https://huigz.github.io/post-images/1593788297865.png" alt="" loading="lazy"></figure>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[古典社会学理论之马克思·韦伯]]></title>
