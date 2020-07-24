@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-07-03T15:04:59.428Z</updated>
+    <updated>2020-07-24T19:06:11.844Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[新教伦理和资本主义 读书笔记]]></title>
+        <id>https://huigz.github.io/j5qHefjKY/</id>
+        <link href="https://huigz.github.io/j5qHefjKY/">
+        </link>
+        <updated>2020-07-24T20:51:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>将对马克思韦伯的 新教伦理和资本主义 中的内容进行整理和分析 并不断迭代 修改不够准确 不够深刻的笔记</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>将对马克思韦伯的 新教伦理和资本主义 中的内容进行整理和分析 并不断迭代 修改不够准确 不够深刻的笔记</p>
+<!-- more -->
+<p><a href="https://www.notion.so/d2ac8bfaf05b46e4b5cce5a62a7b99d7">点击进入</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Python基础入门教程]]></title>
         <id>https://huigz.github.io/bsHIn6Jga/</id>
@@ -24,7 +37,7 @@
         <id>https://huigz.github.io/R1_jNpDHI/</id>
         <link href="https://huigz.github.io/R1_jNpDHI/">
         </link>
-        <updated>2020-06-23T19:47:29.000Z</updated>
+        <updated>2020-06-23T20:47:29.000Z</updated>
         <summary type="html"><![CDATA[<p>韦伯对社会学是否有可能促进社会进步持怀疑态度，他认为社会学的主要作用是支持历史研究。(这并不意味着韦伯将人类寻求知识的活动毫无意义)</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>韦伯对社会学是否有可能促进社会进步持怀疑态度，他认为社会学的主要作用是支持历史研究。(这并不意味着韦伯将人类寻求知识的活动毫无意义)</p>
@@ -64,7 +77,7 @@
 <tr>
 <td style="text-align:center">历史的必然性</td>
 <td style="text-align:center">历史发展的规律性</td>
-<td style="text-align:center">历史发展规律性的反对-&gt;个人性，选择性亲和力</td>
+<td style="text-align:center">历史发展规律性的反对-&gt;个人性，内在亲和力</td>
 </tr>
 <tr>
 <td style="text-align:center">经济决定论</td>
@@ -73,16 +86,17 @@
 </tr>
 </tbody>
 </table>
-<p><em>注 选择性亲和力：在置换、分解、化合等化学反应过程中，元素间彼此的结合程度（wikipedia）</em></p>
+<p><em>注 <s>选择性亲和力</s> 内在亲和力：在置换、分解、化合等化学反应过程中，元素间彼此的结合程度（wikipedia）</em><br>
+<span style="color:white">2020.07.25 对翻译进行了更正 <s>选择性亲和力</s> -&gt; 内在亲和力</span></p>
 <p>韦伯认为，西方星期的近代资本主义的特征<strong>不仅仅是利润</strong>，而是<strong>合理化</strong>，即 人们生活中依据为了<strong>追求效率</strong>的原则，在<strong>技术的基础</strong>上，<strong>组织化</strong>形成的支配性的，广范围的结构。</p>
 <h3 id="新教理论和资本主义精神">新教理论和资本主义精神</h3>
 <ul>
-<li>多维度因果关系</li>
-<li>选择的亲和力</li>
+<li>多维度因果关系(反单因论)</li>
+<li>内在亲和力</li>
 <li>예정설(豫定說)과 소명설(召命說)의 결합 <span style="color:red">未确定翻译，待修正</span></li>
-<li>칼뱅주의의 ‘현세적 금욕주의’는 의도하지 않은 결과로 자본주의적 사고방식 및 행동방식의 바탕을 제공함으로써 서구 자본주의적 합리 화 과정과 연계된다 <span style="color:red">未确定翻译，待修正 同下文</span></li>
+<li>在构成近代资本主义精神，乃至整个近代文化精神的诸基本要素之中，以“职业”概念为基础的理性行为这一要素，正是从基督教的<s>禁欲</s>&quot;苦行&quot;行为中产生出来的 (<em>wikipedia</em> <a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E6%95%99%E5%80%AB%E7%90%86%E8%88%87%E8%B3%87%E6%9C%AC%E4%B8%BB%E7%BE%A9%E7%B2%BE%E7%A5%9E">新教理论和资本主义精神</a><br>
+<span style="color:white">已更正 2020.07.25 详情解释见<a href="https://www.notion.so/3-703466ef72e04c1abd1590d3bdc5162f">新教伦理和资本主义_职业观</a></span></li>
 </ul>
-<p>在构成近代资本主义精神，乃至整个近代文化精神的诸基本要素之中，以“职业”概念为基础的理性行为这一要素，正是从基督教禁欲主义中产生出来的(<em>wikipedia</em> <a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E6%95%99%E5%80%AB%E7%90%86%E8%88%87%E8%B3%87%E6%9C%AC%E4%B8%BB%E7%BE%A9%E7%B2%BE%E7%A5%9E">新教理论和资本主义精神</a></p>
 <p>在“新教伦理与资本主义”之后，韦伯出版了《中国的宗教》，《印度的宗教》和《古代犹太教》。这是对有关合理化过程的讨论进行概括的一种尝试，也是一项被评价为比较历史社会学研究实例的典范。</p>
 <p>韦伯在《<strong>中国的宗教</strong>》中分析了<strong>儒道思想</strong>，但只看儒学。他分析说，儒家思想是<strong>家庭作为社会秩序基础</strong>的理论思想，并从这一角度出发，<strong>教导了对家庭和社会的服从</strong>。</p>
 <p>따라서 베버가 보기에 유교는 현세적이기는 했으나 기존의 위계질서 유지라는 보수적 성격이 강하다는 점에서 프로테스탄티즘과는 달랐으며, 따라서 자유로운 개인에 의한 일상생활에서의 합리화 과정과 연계되지 못했다는 것이다. <span style=color:red >待翻译</span></p>
@@ -745,94 +759,6 @@ D --&gt; E(共产主义社会)
 <p>马克思根据人们在资本主义生产关系中，<strong>是否拥有&quot;生产材料(手段)&quot;</strong>，将人们分为了<strong>资产阶级</strong>和<strong>无产阶级</strong>两类。</p>
 <p>随着无产阶级的日益贫困(受压榨)，两个阶级将变得敌对。</p>
 <p>因此，通过无产阶级的<strong>武装革命</strong>，<strong>推翻资本主义的生产关系，废除生产材料(手段)私有制的基础上</strong>，走向一个没有不平等和脱节的社会(共产主义社会)</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[社会学的形成和孔德Comte]]></title>
-        <id>https://huigz.github.io/she-hui-xue-de-xing-cheng-he-comte/</id>
-        <link href="https://huigz.github.io/she-hui-xue-de-xing-cheng-he-comte/">
-        </link>
-        <updated>2020-06-13T21:34:31.000Z</updated>
-        <summary type="html"><![CDATA[<p>19世纪始于欧洲工业主义的社会学和创造了&quot;社会学&quot;这一称呼的启蒙主义继承者Comte</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>19世纪始于欧洲工业主义的社会学和创造了&quot;社会学&quot;这一称呼的启蒙主义继承者Comte</p>
-<!-- more -->
-<h1 id="社会学的形成">社会学的形成</h1>
-<p>19世纪开始,欧洲的工业主义(industrialism)使人们的生活产生了巨大的变化,社会学就是对这种变化的思考研究。其中,<br>
-马克思、韦伯和涂尔干被认为是关键人物。</p>
-<p>当然,并不能仅仅将着三人作为社会学的创始人。<br>
-(콩트, 스펜서, 엥겔스, 짐멜, 파레토, 미드, 해리엇 마티노, 마리안네 베버, 제인 애덤스, 아이다 웰스 바넷, 두 보이스 등) 또한 중요하며, 또한 죽은 백인 남성들(dead white European males)等人的思想都值得思考。</p>
-<h2 id="古典社会学理论">古典社会学理论</h2>
-<ul>
-<li>
-<p>法国的集体主义传统，从奥古斯特·孔戴（1798-1857）到埃米尔·迪克海姆（1858-1917）</p>
-</li>
-<li>
-<p>史密斯（亚当·史密斯（Adam Smith）：1723-1790）和斯宾塞（Herbert Spencer：1820-1903）的思想中的英国功利主义传统</p>
-</li>
-<li>
-<p>德国的意识形态传统出现在卡尔·马克思（1818-1883），麦克斯·韦伯（1862-1920）和乔治·西梅尔（1858-1918）中</p>
-</li>
-<li>
-<p>由约翰·杜威（1859-1952）和乔治·赫伯特·米德（George Herbert Mead）（1863-1931）领导的美国实用主义传统</p>
-</li>
-<li>
-<p>以Parfredo（Vilfredo Pareto：1848-1923）和Gaetano Mosca（1858-1941）为代表的意大利精英传统</p>
-</li>
-<li>
-<p>社会学领域的重要女性先驱人物：哈里特·马丁诺（Harriet Martineau，1802-1876年）和亚当斯（Adams，简·亚当斯（Jane Addams：1860-1935年））</p>
-</li>
-<li>
-<p>马蒂诺：第一位女性社会学家，出生于英国。奥古斯特·孔戴（Auguste Conte）的书于1853年被翻译成英文。他的著作涉及奴隶制的不公正现象，保护工厂工人的法律以及团结工人的权利。他特别对妇女在社会中的地位感兴趣，并寻求改革教育政策，以使妇女比婚姻和养育子女有更多选择。</p>
-</li>
-<li>
-<p>亚当斯（Adams）：美国裔女性社会学家。1889年，他帮助建立了赫尔大厦（Hull House），这是一个住宅设施，用于支持芝加哥的移民家庭。尽管他撰写了11本书和大量论文，但他主要是作为活动家而不是学者的移民与和平活动家。他在第一次世界大战期间确立的和平主义是公众辩论的中心话题，并于1931年获得诺贝尔和平奖。</p>
-</li>
-<li>
-<p>在美国社会学领域做出早期贡献的黑人活动家和学者：艾达·韦尔斯·巴内特（Ida Wells Barnett，1862-1931年）和威廉·EB·杜波依斯（William EB Du Bois，1868-1963年）</p>
-</li>
-<li>
-<p>巴内特（Barnett）：生于一名奴隶父母下，成为一名老师，并成为了新闻记者和报纸出版商。他继续强调种族平等，并坚持应停止针对黑人的暴力行为。他还撰写并就种族不平等一生进行了演讲。</p>
-</li>
-<li>
-<p>两个男孩：哈佛大学出生于马萨诸塞州的一个贫穷家庭，是第一个获得博士学位的有色人种。后来，他成立了亚特兰大社会学研究所，专门研究黑人问题，并成立了全国有色人种促进协会（NAACP）。</p>
-</li>
-</ul>
-<h2 id="社会学的知识背景">社会学的知识背景</h2>
-<p>18世纪启蒙运动将理性和科学统一为一种世界观。启蒙主义者挑战传统，宗教和习俗，追求以<strong>科学知识</strong>而不是习俗<strong>作为社会的基础</strong>。<br>
-其中的<em>Comte</em> (孔德)创造了&quot;社会学&quot;这个称呼。</p>
-<h2 id="社会学的形成-comte孔德">社会学的形成 ——Comte孔德</h2>
-<p>Auguste Comte(1798-1857) 出生于法国，15岁进入法国理工大学，理工学院，以&quot;哲学家&quot;身份在同学中广受欢迎，但这与学校权威相反叛。</p>
-<p>理工学院时期形成的排除神学和形而上学的思想和基于理性和科学原理的思想，并受到早期社会主义者(Claude Henri de Rouvroy Saint-Simon,1760-1825)的影响。</p>
-<p>孔德受此影响，排除神学和形而上学，并在理性和科学的基础上理解社会，重构社会。</p>
-<p><strong>理性/科学</strong>作为孔德理解社会的基础。可以说，<strong>孔德追求的社会学是&quot;关于社会的科学&quot;(社会科学)。</strong></p>
-<h3 id="社会学的构成要素">社会学的构成要素</h3>
-<ul>
-<li>社会静态(学)：对社会<strong>结构</strong>，<strong>要素</strong>以及其中<strong>关系</strong>的研究。</li>
-<li>社会动态(学)：对<strong>社会变动</strong>的研究。(<em>重要成果：人类进步三阶段</em> )</li>
-</ul>
-<hr>
-<h3 id="人类进步三阶段">人类进步三阶段</h3>
-<ol>
-<li>神学(虚构)</li>
-<li>形而上学(抽象)</li>
-<li>科学(实证)</li>
-</ol>
-<blockquote>
-<p>&quot;社会学处于实证阶段的顶点，是所有学问的女王&quot;</p>
-</blockquote>
-<hr>
-<p>孔德的另一重要思想是：</p>
-<blockquote>
-<p>相比将关注社会个体成员(个人)的特征，不如将个体联系起来，关注社会组织的类型。</p>
-</blockquote>
-<p><strong>对个人主义的批判，将社会作为有机体的观点。</strong></p>
-<hr>
-<h3 id="孔德和现代社会学">孔德和现代社会学</h3>
-<p>其中社会的科学理解以及由此重新构成社会观念,是社会学作为近代学问地位时的重要基础。</p>
-<p>由于没有提出具体的社会动学理论，所以对现代社会学影响不大。</p>
-<p>社会动学/静学的分类和有机体社会的隐喻仍值得思考。</p>
-<p>...待续</p>
 ]]></content>
     </entry>
 </feed>
