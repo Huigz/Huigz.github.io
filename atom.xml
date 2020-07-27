@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-07-24T19:06:11.844Z</updated>
+    <updated>2020-07-27T15:23:45.100Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -11,11 +11,24 @@
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
     <entry>
+        <title type="html"><![CDATA[Python Tips]]></title>
+        <id>https://huigz.github.io/SwzM84GPe/</id>
+        <link href="https://huigz.github.io/SwzM84GPe/">
+        </link>
+        <updated>2020-07-26T18:30:34.000Z</updated>
+        <summary type="html"><![CDATA[<p>这里会包含Python的细节或Tips 并会不断更新迭代</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这里会包含Python的细节或Tips 并会不断更新迭代</p>
+<!-- more -->
+<p><a href="https://www.notion.so/Python-Tips-a2f7609c31a640949f631fd19e8d4591">点击进入</a></p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[新教伦理和资本主义 读书笔记]]></title>
         <id>https://huigz.github.io/j5qHefjKY/</id>
         <link href="https://huigz.github.io/j5qHefjKY/">
         </link>
-        <updated>2020-07-24T20:51:29.000Z</updated>
+        <updated>2020-07-24T21:51:29.000Z</updated>
         <summary type="html"><![CDATA[<p>将对马克思韦伯的 新教伦理和资本主义 中的内容进行整理和分析 并不断迭代 修改不够准确 不够深刻的笔记</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>将对马克思韦伯的 新教伦理和资本主义 中的内容进行整理和分析 并不断迭代 修改不够准确 不够深刻的笔记</p>
@@ -37,7 +50,7 @@
         <id>https://huigz.github.io/R1_jNpDHI/</id>
         <link href="https://huigz.github.io/R1_jNpDHI/">
         </link>
-        <updated>2020-06-23T20:47:29.000Z</updated>
+        <updated>2020-06-23T21:47:29.000Z</updated>
         <summary type="html"><![CDATA[<p>韦伯对社会学是否有可能促进社会进步持怀疑态度，他认为社会学的主要作用是支持历史研究。(这并不意味着韦伯将人类寻求知识的活动毫无意义)</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>韦伯对社会学是否有可能促进社会进步持怀疑态度，他认为社会学的主要作用是支持历史研究。(这并不意味着韦伯将人类寻求知识的活动毫无意义)</p>
@@ -93,7 +106,7 @@
 <ul>
 <li>多维度因果关系(反单因论)</li>
 <li>内在亲和力</li>
-<li>예정설(豫定說)과 소명설(召命說)의 결합 <span style="color:red">未确定翻译，待修正</span></li>
+<li>预定论（<a href="https://www.notion.so/1fde404d95674c91a66abea6de92242f">加尔文派 预定论的解释</a>和召命论的结合 <span style="color:white">20.07.27 更新翻译为预定论</span></li>
 <li>在构成近代资本主义精神，乃至整个近代文化精神的诸基本要素之中，以“职业”概念为基础的理性行为这一要素，正是从基督教的<s>禁欲</s>&quot;苦行&quot;行为中产生出来的 (<em>wikipedia</em> <a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E6%95%99%E5%80%AB%E7%90%86%E8%88%87%E8%B3%87%E6%9C%AC%E4%B8%BB%E7%BE%A9%E7%B2%BE%E7%A5%9E">新教理论和资本主义精神</a><br>
 <span style="color:white">已更正 2020.07.25 详情解释见<a href="https://www.notion.so/3-703466ef72e04c1abd1590d3bdc5162f">新教伦理和资本主义_职业观</a></span></li>
 </ul>
@@ -649,116 +662,6 @@
 <li>相互作用</li>
 <li>后期涂尔干的文化社会学</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[古典社会学理论之马克思]]></title>
-        <id>https://huigz.github.io/gu-dian-she-hui-xue-li-lun-zhi-ma-ke-si/</id>
-        <link href="https://huigz.github.io/gu-dian-she-hui-xue-li-lun-zhi-ma-ke-si/">
-        </link>
-        <updated>2020-06-14T20:17:49.000Z</updated>
-        <summary type="html"><![CDATA[<p>介绍了马克思的生平和社会学理论。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>介绍了马克思的生平和社会学理论。</p>
-<!-- more -->
-<h1 id="古典社会学理论之马克思">古典社会学理论之马克思</h1>
-<h2 id="马克思的生平和经历">马克思的生平和经历</h2>
-<p>生于프로이센 트리에(Trier)，父亲是一名律师，<br>
-邻居：前贵族的Ludwig von Westphalen对马克思具有思想上的影响。</p>
-<p>进入大学一年后，转学到柏林大学，最初学习<strong>法律，后对哲学和历史感兴趣</strong>，受到<strong>黑格尔</strong>的强烈影响。获得哲学博士学位后，因政府打压黑格尔主义青年，使马克思在大学工作变得困难。</p>
-<p>此后<strong>马克思转向媒体行业发展</strong>，担任『라인신문』(line news)线报新闻主编，但被当局强行关闭。这一时期，马克思远离了哲学，直接面对社会现实。</p>
-<p>报社被关闭后，马克思前往<strong>巴黎</strong>，与激进知识分子互动，<strong>此时，遇到了恩格斯</strong>(拥有一家纺织厂的资本家，后变为共产主义者并为后来逃到伦敦的马克思提供财政支持)</p>
-<p>随着马克思声望的提高，普鲁士政府开始对其监视，最终马克思被驱赶到了布鲁塞尔(比利时首都)，后因线报重印，马克思回到了德国一段时间，后又被流放，马克思逃往了伦敦并度过了余生。</p>
-<hr>
-<p>在伦敦，马克思致力于研究对资本主义的批评 ：<strong>资本论</strong></p>
-<p>最初计划为六个部分：</p>
-<ul>
-<li>资本</li>
-<li>土地所有权</li>
-<li>工资劳动</li>
-<li><s>国家</s></li>
-<li><s>外贸</s></li>
-<li><s>世界市场</s></li>
-</ul>
-<p>（后三部分未写成）</p>
-<h2 id="早期马克思对黑格尔思想的批评">早期马克思对黑格尔思想的批评</h2>
-<p><strong>与黑格尔对于国家角色的不同见解</strong></p>
-<p>黑格尔：</p>
-<blockquote>
-<p>国家是人民普遍意愿的表现</p>
-</blockquote>
-<p>马克思：</p>
-<blockquote>
-<p>国家作为维护当权者利益的角色</p>
-</blockquote>
-<p><strong>对黑格尔观念论(理想主义)的批判</strong></p>
-<p>马克思青年时期的德国哲学学术界深受黑格尔观念论的影响，</p>
-<p>即</p>
-<blockquote>
-<p>物质世界中表现自我存在的&quot;绝对精神&quot;是终极的真实存在。</p>
-</blockquote>
-<p><em>马克思的<strong>唯物论</strong>是对黑格尔观念论的强烈批判。</em></p>
-<p>并且，马克思明确指出：</p>
-<blockquote>
-<p>历史的发展过程并不是思想观念之间的斗争，而是<strong>处在物质需求和利害关系环境中生存的人类间的斗争。</strong><br>
-（这也是马克思关注经济制度和基层劳动者的契机）</p>
-</blockquote>
-<hr>
-<p>马克思并不是反对黑格尔的所有主张，其中马克思认同了黑格尔的</p>
-<blockquote>
-<p>需要通过历史的脉络了解人类的生活</p>
-</blockquote>
-<blockquote>
-<p>通过相互对立的结合来取得进步(辩证法过程)的可能性。</p>
-</blockquote>
-<h2 id="马克思对政治经济学的批判">马克思对政治经济学的批判</h2>
-<p>马克思接受了当时的政治经济学中的**使用价值(实际效用)<strong>和</strong>交换价值(市场价值)**的概念。</p>
-<ul>
-<li>批判传统经济学无法理解资本家为了获得利润利用的&quot;<strong>盈余价值</strong>&quot;</li>
-<li>批判国家支持&quot;私有财产&quot;, <strong>将私有财产视为人来之间冲突，疏远，不平等的根源。</strong></li>
-</ul>
-<blockquote>
-<p>指出资本主义生产关系导致了劳动者的脱节(alienation)</p>
-</blockquote>
-<p>原因 : 资本主义劳动过程扩大了劳动分工以提升效率，<strong>剥夺了工人的控制权，使工人与生产过程，产品，自身，阶层存在脱节。</strong></p>
-<h2 id="马克思唯物论的历史">马克思唯物论的历史</h2>
-<p>马克思认为社会具有两个部分：</p>
-<ul>
-<li>基础(Base)</li>
-<li>上层构造(superstructure)</li>
-</ul>
-<p>Base为社会的经济结构</p>
-<ul>
-<li>生产力</li>
-<li>生产关系</li>
-<li>生产方式</li>
-</ul>
-<p>SuperStructure指</p>
-<ul>
-<li>法律</li>
-<li>政治</li>
-<li>宗教</li>
-<li>哲学</li>
-<li>........</li>
-</ul>
-<p><strong>SuperStructure(法律，政治结构，宗教形式，思考方式)为Base(社会经济形态)的反应(体现)</strong></p>
-<p>对于Base(生产力，生产关系，生产方式)的讨论，是唯物论的主要内容。</p>
-<blockquote>
-<p>政治经济学批判序言（1859年）：“人类通过社会生产生活，他们对某些不可避免的关系作出反应，而这与他们的意志无关，也就是说，对物质生产力发展的某个阶段。建立生产关系。”<br>
-这些生产关系的整体构成了社会的经济结构，其上的法律和政治上层建筑以及某些形式的社会意识所对应的真实基础。物质生活的生产方式总体上制约着社会，政治和心理生活过程。”</p>
-</blockquote>
-<h3 id="马克思社会进步模型">马克思社会进步模型</h3>
-<pre><code class="language-mermaid">graph TD
-A(原始共产社会) --&gt; B(古代奴役社会)
-B --&gt; C(中世纪封建社会)
-C --&gt; D(资本主义社会)
-D --&gt; E(共产主义社会)
-</code></pre>
-<p><strong>每一层社会都会因敌对的社会关系的增加而进化到下一层，向社会主义过渡</strong></p>
-<h2 id="马克思的阶级论和共产主义论">马克思的阶级论和共产主义论</h2>
-<p>马克思根据人们在资本主义生产关系中，<strong>是否拥有&quot;生产材料(手段)&quot;</strong>，将人们分为了<strong>资产阶级</strong>和<strong>无产阶级</strong>两类。</p>
-<p>随着无产阶级的日益贫困(受压榨)，两个阶级将变得敌对。</p>
-<p>因此，通过无产阶级的<strong>武装革命</strong>，<strong>推翻资本主义的生产关系，废除生产材料(手段)私有制的基础上</strong>，走向一个没有不平等和脱节的社会(共产主义社会)</p>
 ]]></content>
     </entry>
 </feed>
