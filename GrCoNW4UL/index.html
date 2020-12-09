@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-<title>Python Tips - huigz&#39;s Blog</title>
+<title>📑Database概论 SQL_1 - huigz&#39;s Blog</title>
 <meta name="description" content="Call me now">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -136,34 +136,228 @@
                     <div class="col-12 col-lg-10">
                       <div class="layout-post-main m-right m-md-right">
                         <div class="layout-post-header">
-                          <h1 class="layout-post-title">Python Tips</h1>
+                          <h1 class="layout-post-title">📑Database概论 SQL_1</h1>
                           <div class="layout-post-meta">
                             <div class="item">
-                               <a href="https://huigz.github.io/CstIRrdJP/" class="post--keyword"
-                                data-title="Python入门教程" data-type="post_tag" data-term-id="39">Python入门教程</a>
+                               <a href="https://huigz.github.io/_mbWOil9g/" class="post--keyword"
+                                data-title="数据库" data-type="post_tag" data-term-id="39">数据库</a>
                               
                             </div>
                             <div class="item">
-                              <span>2020-07-27</span>
+                              <span>2020-12-08</span>
                             </div>
                           </div>
                         </div>
                         <div class="layout-post-content">
                           <div class="layout-post-item">
                             
-                            <p class="with-img"><img src="https://huigz.github.io/post-images/SwzM84GPe.png"
-                                class="attachment-full size-full wp-post-image" alt="Python Tips" /></p>
+                            <p class="with-img"><img src="https://huigz.github.io/post-images/GrCoNW4UL.jpg"
+                                class="attachment-full size-full wp-post-image" alt="📑Database概论 SQL_1" /></p>
                             
-                            <p>这里会包含Python的细节或Tips 并会不断更新迭代</p>
+                            <p>Database概论笔记 - SQL_1</p>
 <!-- more -->
-<p><a href="https://www.notion.so/Python-Tips-a2f7609c31a640949f631fd19e8d4591">点击进入</a></p>
+<h1 id="sql">SQL</h1>
+<p>SQL : Structured Query Language</p>
+<h2 id="关于sql">关于SQL</h2>
+<p><strong>Three relational languages</strong></p>
+<ol>
+<li>QUEL</li>
+<li>QBE</li>
+<li><strong>SQL</strong></li>
+</ol>
+<p>SQL是目前Relational DB的标准语言</p>
+<p>SQL是一种 Very-High-Level language</p>
+<h2 id="sql的结构">SQL的结构</h2>
+<h3 id="sql的组成">SQL的组成</h3>
+<ul>
+<li>Table（relation）</li>
+<li>Row（tuple)</li>
+<li>Column (attribute)</li>
+</ul>
+<p>其中 Table 包含了</p>
+<ul>
+<li>Base Table</li>
+<li><strong>View</strong></li>
+</ul>
+<h4 id="基本命令">基本命令</h4>
+<ul>
+<li>
+<p>Data Definition Language（DDL）</p>
+<p>Define Data</p>
+</li>
+<li>
+<p>Data Manipulation language （DML）</p>
+<p>操纵 Data</p>
+</li>
+<li>
+<p>Data Contral Language （DCL）</p>
+</li>
+</ul>
+<p><strong>DDL 用于定义schemas，tables，views</strong></p>
+<ul>
+<li>CREATAE</li>
+<li>DROP</li>
+<li>ALTER</li>
+</ul>
+<p><strong>DML用于操纵数据 搜索，更新 Table中的数据</strong></p>
+<ul>
+<li>SELECT（FROM WHERE）</li>
+<li>INSERT</li>
+<li>DELETE</li>
+<li>UPDATE</li>
+</ul>
+<h2 id="创建table">创建Table</h2>
+<h3 id="using-create-table">Using <em>CREATE TABLE</em></h3>
+<pre><code class="language-sql">CREATE TABLE R
+(	A1:D1
+	A2:D2
+	... ...
+	An:Dn
+ 	Constraints
+)
+</code></pre>
+<ul>
+<li>
+<p>R: Relation Name</p>
+</li>
+<li>
+<p>A: Attrbute Name</p>
+</li>
+<li>
+<p>D: Domain (= data type) of A</p>
+</li>
+<li>
+<p>Constraints：制约条件</p>
+</li>
+</ul>
+<p>通过 CREATE TABLE创建的Relation 称之为<strong>base Table</strong></p>
+<ul>
+<li>relation（and its tuple）都是物理储存</li>
+<li>为空表</li>
+<li>Attritubes 根据 CREATE TABLE指令的顺序创建</li>
+</ul>
+<h3 id="attritube-data-type">Attritube Data Type</h3>
+<h4 id="system-defined">System Defined</h4>
+<ul>
+<li>数值型：<code>INT,SMALLINT,FLOAT(or REAL)...</code></li>
+<li>字符串：<code>CHAR(n),VARCHAR(n),CLOB(大容量文章)...</code></li>
+<li>bit string(数据流)：<code>BIT(n),BIT VARYING(n),BLOB(大容量数据)</code></li>
+<li>Bool: <code>TRUE,FLASE,UNKOWN</code></li>
+<li>Date: <code>YEAR,MONTH,DAY</code></li>
+</ul>
+<h4 id="user-defined">User Defined</h4>
+<p>用户自定义数据类型</p>
+<pre><code class="language-sql">CREATE DOMAIN SSN-TYPE AS CHAR(9)
+</code></pre>
+<h3 id="constraints-制约条件">Constraints 制约条件</h3>
+<ul>
+<li><code>PRIMARY KEY</code></li>
+<li><code>UNIQUE</code></li>
+<li><code>NOT NULL</code></li>
+<li><code>FOREIGN KEY REFERENCES</code></li>
+<li>...</li>
+</ul>
+<h4 id="keyentity-constraints">Key/Entity Constraints</h4>
+<p>ER: ...</p>
+<p>Relation: EMP(<u>SSN</u>,Name,Bdate)</p>
+<p>Table (SQL):</p>
+<pre><code class="language-sql">CREATE TABLE EMP(
+	SSN CHAR(9) NOT NULL
+	Name VARCHAR(10) NOT NULL
+    Bdate DATE
+    PRIMARY KEY(SSN)
+    UNIQUE(Name)
+)
+</code></pre>
+<p>​	<em>PK-&gt; SSN  KEY-&gt;Name</em></p>
+<h4 id="referential-constraints">Referential Constraints</h4>
+<p>ER: ...</p>
+<p>Relation:</p>
+<p>​	EMP(<u>SSN</u>,Name,Bdate)</p>
+<p>​	DEPT(<u>DNO</u>,Name,Mgr_SSN)</p>
+<p>Table:</p>
+<pre><code class="language-SQL">CREATE TABLE EMP(
+	SSN CHAR(9) NOT NULL
+	Name VARCHAR(10) NOT NULL
+    Bdate DATE
+    PRIMARY KEY(SSN)
+    UNIQUE(Name)
+)
+</code></pre>
+<pre><code class="language-SQL">CREATE TABLE DEPT(
+	DNO INT NOT NULL
+	Name CHAR(10)
+    Mgr_SSN CHAR(9) NOT NULL
+    PRIMARY KEY(DNO)
+    FOREIGN KEY(Mgr_SSN) REFERENCES EMP(SSN)
+)
+</code></pre>
+<h4 id="defaultdomaincheck">Default/Domain/Check</h4>
+<p><strong>Default</strong>（默认值）</p>
+<pre><code class="language-sql">CREATE TABLE DEPT(
+	Mgr_SSN CHAR(9) DEFAULT 999999999
+)
+</code></pre>
+<p><strong>Check</strong></p>
+<p>给value设定特殊条件</p>
+<pre><code class="language-sql">DNO INT CHECK(DNO&gt;0) AND (DNO&lt;20)
+</code></pre>
+<p><strong>Domain (Data Type)</strong></p>
+<pre><code class="language-SQL">CREATE DOMAIN SSN_TYPE AS CHAR(9)
+CREATE TABLE EMP(
+	SSN SSN_TYPE NOT NULL
+	name CHAR(10) NOT NULL
+ 	bdate DATE
+  	PRIMARY KEY (SSN)
+    UNIQUE (name)
+)
+</code></pre>
+<pre><code class="language-sql">CREATE TABLE DEPT(
+	DNO INT NOT NULL
+	Name CHAR(10)
+    Mgr_SSN SSN_TYPE NOT NULL
+    PRIMARY KEY(DNO)
+    FOREIGN KEY(Mgr_SSN) REFERENCES EMP(SSN)
+)
+</code></pre>
+<p>如果SSN的Data Type需要改变 可直接改变SSN_TYPE的定义</p>
+<h3 id="trigger-触发">Trigger 触发</h3>
+<pre><code class="language-SQL">CREATE DOMAIN SSN_TYPE AS CHAR(9)
+CREATE TABLE EMP(
+	SSN SSN_TYPE NOT NULL
+	name CHAR(10) NOT NULL
+ 	bdate DATE
+  	PRIMARY KEY (SSN)
+    UNIQUE (name)
+    ON DELETE  SET NULL
+    ON UPDATE  CASCADE
+)
+</code></pre>
+<pre><code class="language-SQL">CREATE TABLE DEPT(
+	DNO INT NOT NULL
+	Name CHAR(10)
+    Mgr_SSN SSN_TYPE NOT NULL
+    PRIMARY KEY(DNO)
+    FOREIGN KEY(Mgr_SSN) REFERENCES EMP(SSN)
+)
+</code></pre>
+<!-- more -->
+<p><strong>条件：</strong></p>
+<ul>
+<li>ON ... (触发条件)</li>
+</ul>
+<p><strong>操作：</strong></p>
+<ul>
+<li>SET ... (设定值)</li>
+<li>CASCADE (对Referential Data采取相同的操作)</li>
+</ul>
 
                           </div>
                         </div>
                         <div class="layout-post-social">
                           <div class="item reader">
-                            <div id="/post/SwzM84GPe/" class="leancloud-visitors view"
-                              data-flag-title="Python Tips">
+                            <div id="/post/GrCoNW4UL/" class="leancloud-visitors view"
+                              data-flag-title="📑Database概论 SQL_1">
                               <span class="post-meta-item-text">阅读 </span>
                               <span class="leancloud-visitors-count"></span>
                             </div>
@@ -190,7 +384,7 @@
                                   </div>
                                 </div>
                                 <div class="card-footer">
-                                  <div class="item"><span>上一篇</span></div>
+                                  <div class="item"><span>下一篇</span></div>
                                   <div class="item">2020-09-03</div>
                                 </div>
                               </div>
@@ -202,37 +396,6 @@
                               </div>
                               
                             </div>
-
-                            <div class="post-card row">
-                              
-                              <div class="card-content col-8 col-md-9">
-                                <div class="card-body">
-                                  <div class="header">
-                                    <a href="https://huigz.github.io/j5qHefjKY/" class="title">
-                                      <h4>新教伦理和资本主义 内容概述</h4>
-                                    </a>
-                                  </div>
-                                  <div class="inner d-none d-sm-block">
-                                    <div class="abstract">
-                                      <p>将对马克思韦伯的 新教伦理和资本主义 中的内容进行整理和分析 并不断迭代 修改不够准确 不够深刻的笔记</p>
-
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card-footer">
-                                  <div class="item"><span>下一篇</span></div>
-                                  <div class="item">2020-07-25</div>
-                                </div>
-                              </div>
-                              <div class="card-thumb col-4 col-md-3">
-                                <div class="thumb">
-                                  <a href="https://huigz.github.io/j5qHefjKY/"
-                                    style="background-image: url('https://huigz.github.io/post-images/j5qHefjKY.png');"></a>
-                                </div>
-                              </div>
-                              
-                            </div>
-
                             
                           </div>
                         </div>
@@ -245,7 +408,42 @@
                     <div class="col-12 col-lg-2 d-none d-lg-block">
                       <div class="layout-post-sidebar">
                         <div class="layout-sidebar-item">
-                          
+                          <ul class="markdownIt-TOC">
+<li><a href="#sql">SQL</a>
+<ul>
+<li><a href="#%E5%85%B3%E4%BA%8Esql">关于SQL</a></li>
+<li><a href="#sql%E7%9A%84%E7%BB%93%E6%9E%84">SQL的结构</a>
+<ul>
+<li><a href="#sql%E7%9A%84%E7%BB%84%E6%88%90">SQL的组成</a>
+<ul>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4">基本命令</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%88%9B%E5%BB%BAtable">创建Table</a>
+<ul>
+<li><a href="#using-create-table">Using <em>CREATE TABLE</em></a></li>
+<li><a href="#attritube-data-type">Attritube Data Type</a>
+<ul>
+<li><a href="#system-defined">System Defined</a></li>
+<li><a href="#user-defined">User Defined</a></li>
+</ul>
+</li>
+<li><a href="#constraints-%E5%88%B6%E7%BA%A6%E6%9D%A1%E4%BB%B6">Constraints 制约条件</a>
+<ul>
+<li><a href="#keyentity-constraints">Key/Entity Constraints</a></li>
+<li><a href="#referential-constraints">Referential Constraints</a></li>
+<li><a href="#defaultdomaincheck">Default/Domain/Check</a></li>
+</ul>
+</li>
+<li><a href="#trigger-%E8%A7%A6%E5%8F%91">Trigger 触发</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
                         </div>
                       </div>
                     </div>

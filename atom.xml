@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-09-04T02:28:30.738Z</updated>
+    <updated>2020-12-09T01:30:09.719Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,213 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, huigz&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[📑Database概论 SQL_1]]></title>
+        <id>https://huigz.github.io/GrCoNW4UL/</id>
+        <link href="https://huigz.github.io/GrCoNW4UL/">
+        </link>
+        <updated>2020-12-08T07:29:27.000Z</updated>
+        <summary type="html"><![CDATA[<p>Database概论笔记 - SQL_1</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Database概论笔记 - SQL_1</p>
+<!-- more -->
+<h1 id="sql">SQL</h1>
+<p>SQL : Structured Query Language</p>
+<h2 id="关于sql">关于SQL</h2>
+<p><strong>Three relational languages</strong></p>
+<ol>
+<li>QUEL</li>
+<li>QBE</li>
+<li><strong>SQL</strong></li>
+</ol>
+<p>SQL是目前Relational DB的标准语言</p>
+<p>SQL是一种 Very-High-Level language</p>
+<h2 id="sql的结构">SQL的结构</h2>
+<h3 id="sql的组成">SQL的组成</h3>
+<ul>
+<li>Table（relation）</li>
+<li>Row（tuple)</li>
+<li>Column (attribute)</li>
+</ul>
+<p>其中 Table 包含了</p>
+<ul>
+<li>Base Table</li>
+<li><strong>View</strong></li>
+</ul>
+<h4 id="基本命令">基本命令</h4>
+<ul>
+<li>
+<p>Data Definition Language（DDL）</p>
+<p>Define Data</p>
+</li>
+<li>
+<p>Data Manipulation language （DML）</p>
+<p>操纵 Data</p>
+</li>
+<li>
+<p>Data Contral Language （DCL）</p>
+</li>
+</ul>
+<p><strong>DDL 用于定义schemas，tables，views</strong></p>
+<ul>
+<li>CREATAE</li>
+<li>DROP</li>
+<li>ALTER</li>
+</ul>
+<p><strong>DML用于操纵数据 搜索，更新 Table中的数据</strong></p>
+<ul>
+<li>SELECT（FROM WHERE）</li>
+<li>INSERT</li>
+<li>DELETE</li>
+<li>UPDATE</li>
+</ul>
+<h2 id="创建table">创建Table</h2>
+<h3 id="using-create-table">Using <em>CREATE TABLE</em></h3>
+<pre><code class="language-sql">CREATE TABLE R
+(	A1:D1
+	A2:D2
+	... ...
+	An:Dn
+ 	Constraints
+)
+</code></pre>
+<ul>
+<li>
+<p>R: Relation Name</p>
+</li>
+<li>
+<p>A: Attrbute Name</p>
+</li>
+<li>
+<p>D: Domain (= data type) of A</p>
+</li>
+<li>
+<p>Constraints：制约条件</p>
+</li>
+</ul>
+<p>通过 CREATE TABLE创建的Relation 称之为<strong>base Table</strong></p>
+<ul>
+<li>relation（and its tuple）都是物理储存</li>
+<li>为空表</li>
+<li>Attritubes 根据 CREATE TABLE指令的顺序创建</li>
+</ul>
+<h3 id="attritube-data-type">Attritube Data Type</h3>
+<h4 id="system-defined">System Defined</h4>
+<ul>
+<li>数值型：<code>INT,SMALLINT,FLOAT(or REAL)...</code></li>
+<li>字符串：<code>CHAR(n),VARCHAR(n),CLOB(大容量文章)...</code></li>
+<li>bit string(数据流)：<code>BIT(n),BIT VARYING(n),BLOB(大容量数据)</code></li>
+<li>Bool: <code>TRUE,FLASE,UNKOWN</code></li>
+<li>Date: <code>YEAR,MONTH,DAY</code></li>
+</ul>
+<h4 id="user-defined">User Defined</h4>
+<p>用户自定义数据类型</p>
+<pre><code class="language-sql">CREATE DOMAIN SSN-TYPE AS CHAR(9)
+</code></pre>
+<h3 id="constraints-制约条件">Constraints 制约条件</h3>
+<ul>
+<li><code>PRIMARY KEY</code></li>
+<li><code>UNIQUE</code></li>
+<li><code>NOT NULL</code></li>
+<li><code>FOREIGN KEY REFERENCES</code></li>
+<li>...</li>
+</ul>
+<h4 id="keyentity-constraints">Key/Entity Constraints</h4>
+<p>ER: ...</p>
+<p>Relation: EMP(<u>SSN</u>,Name,Bdate)</p>
+<p>Table (SQL):</p>
+<pre><code class="language-sql">CREATE TABLE EMP(
+	SSN CHAR(9) NOT NULL
+	Name VARCHAR(10) NOT NULL
+    Bdate DATE
+    PRIMARY KEY(SSN)
+    UNIQUE(Name)
+)
+</code></pre>
+<p>​	<em>PK-&gt; SSN  KEY-&gt;Name</em></p>
+<h4 id="referential-constraints">Referential Constraints</h4>
+<p>ER: ...</p>
+<p>Relation:</p>
+<p>​	EMP(<u>SSN</u>,Name,Bdate)</p>
+<p>​	DEPT(<u>DNO</u>,Name,Mgr_SSN)</p>
+<p>Table:</p>
+<pre><code class="language-SQL">CREATE TABLE EMP(
+	SSN CHAR(9) NOT NULL
+	Name VARCHAR(10) NOT NULL
+    Bdate DATE
+    PRIMARY KEY(SSN)
+    UNIQUE(Name)
+)
+</code></pre>
+<pre><code class="language-SQL">CREATE TABLE DEPT(
+	DNO INT NOT NULL
+	Name CHAR(10)
+    Mgr_SSN CHAR(9) NOT NULL
+    PRIMARY KEY(DNO)
+    FOREIGN KEY(Mgr_SSN) REFERENCES EMP(SSN)
+)
+</code></pre>
+<h4 id="defaultdomaincheck">Default/Domain/Check</h4>
+<p><strong>Default</strong>（默认值）</p>
+<pre><code class="language-sql">CREATE TABLE DEPT(
+	Mgr_SSN CHAR(9) DEFAULT 999999999
+)
+</code></pre>
+<p><strong>Check</strong></p>
+<p>给value设定特殊条件</p>
+<pre><code class="language-sql">DNO INT CHECK(DNO&gt;0) AND (DNO&lt;20)
+</code></pre>
+<p><strong>Domain (Data Type)</strong></p>
+<pre><code class="language-SQL">CREATE DOMAIN SSN_TYPE AS CHAR(9)
+CREATE TABLE EMP(
+	SSN SSN_TYPE NOT NULL
+	name CHAR(10) NOT NULL
+ 	bdate DATE
+  	PRIMARY KEY (SSN)
+    UNIQUE (name)
+)
+</code></pre>
+<pre><code class="language-sql">CREATE TABLE DEPT(
+	DNO INT NOT NULL
+	Name CHAR(10)
+    Mgr_SSN SSN_TYPE NOT NULL
+    PRIMARY KEY(DNO)
+    FOREIGN KEY(Mgr_SSN) REFERENCES EMP(SSN)
+)
+</code></pre>
+<p>如果SSN的Data Type需要改变 可直接改变SSN_TYPE的定义</p>
+<h3 id="trigger-触发">Trigger 触发</h3>
+<pre><code class="language-SQL">CREATE DOMAIN SSN_TYPE AS CHAR(9)
+CREATE TABLE EMP(
+	SSN SSN_TYPE NOT NULL
+	name CHAR(10) NOT NULL
+ 	bdate DATE
+  	PRIMARY KEY (SSN)
+    UNIQUE (name)
+    ON DELETE  SET NULL
+    ON UPDATE  CASCADE
+)
+</code></pre>
+<pre><code class="language-SQL">CREATE TABLE DEPT(
+	DNO INT NOT NULL
+	Name CHAR(10)
+    Mgr_SSN SSN_TYPE NOT NULL
+    PRIMARY KEY(DNO)
+    FOREIGN KEY(Mgr_SSN) REFERENCES EMP(SSN)
+)
+</code></pre>
+<!-- more -->
+<p><strong>条件：</strong></p>
+<ul>
+<li>ON ... (触发条件)</li>
+</ul>
+<p><strong>操作：</strong></p>
+<ul>
+<li>SET ... (设定值)</li>
+<li>CASCADE (对Referential Data采取相同的操作)</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Theories of migration ]]></title>
         <id>https://huigz.github.io/LWQkNc_Jl/</id>
@@ -551,31 +758,6 @@
 <p>涉入程度（Involvement）高时，处理资讯时倾向于采用中央路径的模式，亦即根据资讯的内容，经过审慎思考之后做出决策。因此涉入程度高者因为认知的改变，而产生了信念与态度改变，最后导致行为改变。而当涉入程度低时，则会倾向于根据事物的周边属性与外在线索进行资讯处理。因此涉入程度低者信念改变后，先改变了行为，最后才导致态度的转变。</p>
 <p><strong>涉入程度高 -&gt; 中央途径 -&gt; 系统分析 -&gt; 改变态度 -&gt; 改变行为</strong></p>
 <p><strong>涉入程度低 -&gt; 周围途径 -&gt; 估量法 -&gt; 改变行为 -&gt; 改变态度</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[社会学的形成之斯宾塞]]></title>
-        <id>https://huigz.github.io/she-hui-xue-de-xing-cheng-zhi-si-bin-sai/</id>
-        <link href="https://huigz.github.io/she-hui-xue-de-xing-cheng-zhi-si-bin-sai/">
-        </link>
-        <updated>2020-06-15T13:57:58.000Z</updated>
-        <summary type="html"><![CDATA[<p>谈到社会学的形成，斯宾塞是继孔德之后的争议人物。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>谈到社会学的形成，斯宾塞是继孔德之后的争议人物。</p>
-<!-- more -->
-<h1 id="社会学的形成-斯宾塞">社会学的形成 —斯宾塞</h1>
-<p>斯宾塞（Herbert Spencer，1820-1903），出生于英格兰的德比，出生于一个非国教徒家庭，因此无法接受官方教育的学习，但是他从父亲和亲戚那里接受了扎实的家庭教育。</p>
-<p>斯宾塞在伦敦的一个俱乐部与当代学者互动，因没有受到正规教育，使他摆脱了学校风格的束缚，拥有自由的倾向构想了&quot;综合哲学&quot;。</p>
-<h3 id="意识形态的影响和贡献">意识形态的影响和贡献</h3>
-<p>斯宾塞显然很少读过任何现有的学术著作，但肯定受到了*托马斯·马尔萨斯 *的《人口理论》的影响。在此基础上，他探索了<strong>适者生存</strong>和<strong>自然淘汰</strong>的含义并影响了查尔斯·达尔文的《物种起源》。(在社会达尔文主义方面的重要著作《进步：法则和原因》比达尔文的《物种起源》还早两年出版)</p>
-<p>此外，在亚当·斯密（Adam Smith）的《国富论》的影响下，<strong>斯宾塞（Spencer）提倡自由主义（自由贸易，市场开放，排斥政府干涉）</strong>。</p>
-<h3 id="斯宾塞的社会进化讨论">斯宾塞的社会进化讨论</h3>
-<blockquote>
-<p>未进化的构造会过渡到以相互依存为特征进化构造。</p>
-</blockquote>
-<h3 id="对现代社会学的影响">对现代社会学的影响</h3>
-<p>适者生存，优胜劣汰和自由主义在进入20世纪后被批判</p>
-<p>社会进化构造和对相互依存的强调与孔德的有机社会隐喻类似，被视为社会学的基石。</p>
 ]]></content>
     </entry>
 </feed>
