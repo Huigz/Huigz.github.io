@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>huigz&apos;s Blog</title>
-    <updated>2020-12-09T01:30:09.719Z</updated>
+    <updated>2020-12-09T02:22:49.017Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -70,8 +70,8 @@
 <li>DELETE</li>
 <li>UPDATE</li>
 </ul>
-<h2 id="创建table">创建Table</h2>
-<h3 id="using-create-table">Using <em>CREATE TABLE</em></h3>
+<h2 id="ddl-创建table">DDL-创建Table</h2>
+<h3 id="using-create-table">Using CREATE TABLE</h3>
 <pre><code class="language-sql">CREATE TABLE R
 (	A1:D1
 	A2:D2
@@ -122,7 +122,8 @@
 <li>...</li>
 </ul>
 <h4 id="keyentity-constraints">Key/Entity Constraints</h4>
-<p>ER: ...</p>
+<p>ER:</p>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/12/09/lRbN3HJnG7L4xB9.png" alt="image-20201209101959367" loading="lazy"></figure>
 <p>Relation: EMP(<u>SSN</u>,Name,Bdate)</p>
 <p>Table (SQL):</p>
 <pre><code class="language-sql">CREATE TABLE EMP(
@@ -135,7 +136,8 @@
 </code></pre>
 <p>​	<em>PK-&gt; SSN  KEY-&gt;Name</em></p>
 <h4 id="referential-constraints">Referential Constraints</h4>
-<p>ER: ...</p>
+<p>ER:</p>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2020/12/09/a7JiPhoGFwr1AXb.png" alt="image-20201209102040232" loading="lazy"></figure>
 <p>Relation:</p>
 <p>​	EMP(<u>SSN</u>,Name,Bdate)</p>
 <p>​	DEPT(<u>DNO</u>,Name,Mgr_SSN)</p>
@@ -205,7 +207,6 @@ CREATE TABLE EMP(
     FOREIGN KEY(Mgr_SSN) REFERENCES EMP(SSN)
 )
 </code></pre>
-<!-- more -->
 <p><strong>条件：</strong></p>
 <ul>
 <li>ON ... (触发条件)</li>
@@ -215,6 +216,41 @@ CREATE TABLE EMP(
 <li>SET ... (设定值)</li>
 <li>CASCADE (对Referential Data采取相同的操作)</li>
 </ul>
+<p><strong>Ex.</strong></p>
+<p>ER:</p>
+<figure data-type="image" tabindex="3"><img src="https://i.loli.net/2020/12/09/7v3kVHeJcK68Lop.png" alt="image-20201209102122701" loading="lazy"></figure>
+<p>Relation:</p>
+<p>​	EMP(<u>SSN</u>,NAME,BDATE,<em>DNO</em>,<em>SUPER_SSN</em>)</p>
+<p>​	DEP(<u>DNO</u>,NAME,<em>MGR_SSN</em>)</p>
+<p>TABLE:</p>
+<pre><code class="language-sql">
+</code></pre>
+<h2 id="ddl-删除table">DDL-删除Table</h2>
+<h3 id="using-drop-table">Using DROP TABLE</h3>
+<p>Have 2 options:</p>
+<ul>
+<li>CASCADE</li>
+<li>RESTRICT</li>
+</ul>
+<p><strong>RESTRICT</strong></p>
+<p>只有当要被删除的表 <strong>没有任何Referenced的constraints或View</strong>时 才会操作删除任务</p>
+<p><strong>CASCADE</strong></p>
+<p>所有Referenced的表或View都会被一同删除</p>
+<h2 id="ddl-变更table-column">DDL-变更Table (Column)</h2>
+<h3 id="using-alert-table">Using ALERT TABLE</h3>
+<p>用于 添加 删除 变更 Table的 Column</p>
+<p>Eg.</p>
+<p>EMP表中 添加新的Column <em>hobby</em></p>
+<pre><code class="language-SQL">ALERT TABLE EMP ADD COLUMN hobby CHAR(12)
+</code></pre>
+<p>EMP表中 删除Column <em>bdate</em></p>
+<pre><code class="language-SQL">ALERT TABLE EMP DROP COLUMN bdate CASCADE
+</code></pre>
+<ul>
+<li>除了CASCADE 也可以使用 RESTRICT 来确保独立删除</li>
+</ul>
+<h2 id="关于ddl">关于DDL</h2>
+<p>综上所述，DDL的操作是相对于 <strong>表结构</strong> 的操作</p>
 ]]></content>
     </entry>
     <entry>
