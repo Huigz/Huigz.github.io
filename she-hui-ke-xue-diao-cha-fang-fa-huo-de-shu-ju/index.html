@@ -1,155 +1,110 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-<title>[社会科学调查方法] 获得数据 📃 - huigz&#39;s Blog</title>
-<meta name="description" content="Call me now">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>[社会科学调查方法] 获得数据 📃 | huigz&#39;s Blog</title>
+<link rel="shortcut icon" href="https://huigz.github.io/favicon.ico?v=1667903938334">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://huigz.github.io/styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<link type='text/css' rel='stylesheet' href='https://huigz.github.io/styles/main.css' media='screen' />
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
-<script type="text/javascript" src='https://huigz.github.io/media/scripts/jquery.js'></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
 
-<script>
-    hljs.initHighlightingOnLoad();
-</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 </head>
-
 <body>
-  <div class="layout theme-dark">
-    <div class="layout-header">
-
-	<div class="layout-header-main">
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-
-					<div class="navbar">
-
-						<div class="logo">
-							<a href="https://huigz.github.io">
-								<img class="logo"
-									src="https://huigz.github.io/media/images/site_avatar.png?v=1667903897035"
-									alt="">
-							</a>
-						</div>
-
-						<div class="menu d-md-inline-block d-none">
-							<ul class="layout-navigation-list">
-								
-								<li class="layout-navigation-item"><a title="首页"
-										href="/">首页</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="社会学"
-										href="/AnH4oneMoB/">社会学</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="标签"
-										href="/tags">标签</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="知识库-Huigz Wiki"
-										href="https://www.notion.so/Huigz-s-Wiki-Lib-919abbe6cf94493da77b619c64e8ece6">知识库-Huigz Wiki</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="About me"
-										href="/post/about">About me</a>
-								</li>
-								
-							</ul>
-						</div>
-
-						<div class="item d-md-inline-block d-none">
-							<div class="search-icon">
-								<i class="fa fa-search" aria-hidden="true"></i>
-							</div>
-						</div>
-
-
-
-						<div class="d-md-inline-block d-none">
-							<div class="search-lightbox">
-								<div class="search-body">
-
-									<form id="gridea-search-form" data-update="1667903897035" action="/search/" class="search-form">
-										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
-										<button type="submit" class="submit" aria-label="Submit">
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</button>
-									</form>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="nav d-md-none d-inline-block">
-							<div class="trigger">
-								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-
-
-
-		</div>
-	</div>
-
-</div>
-    <div class="layout-collapse d-md-none">
-	<div class="layout-collapse-main">
-		<ul class="layout-collapse-list">
-			
-			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
-			
-			<li class="layout-collapse-item"><a title="社会学" href="/AnH4oneMoB/">社会学</a></li>
-			
-			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
-			
-			<li class="layout-collapse-item"><a title="知识库-Huigz Wiki" href="https://www.notion.so/Huigz-s-Wiki-Lib-919abbe6cf94493da77b619c64e8ece6">知识库-Huigz Wiki</a></li>
-			
-			<li class="layout-collapse-item"><a title="About me" href="/post/about">About me</a></li>
-			
-
-		</ul>
-	</div>
-</div>
-
-    <div class="layout-content">
-      <div class="layout-content-main">
-        <div class="container">
-          <div class="row justify-content-lg-center">
-            <div class="col-12 col-lg-9">
-              <div class="layout-post">
-                <div class="layout-post-body">
-                  <div class="row">
-
-                    <div class="col-12 col-lg-10">
-                      <div class="layout-post-main m-right m-md-right">
-                        <div class="layout-post-header">
-                          <h1 class="layout-post-title">[社会科学调查方法] 获得数据 📃</h1>
-                          <div class="layout-post-meta">
-                            <div class="item">
-                              
-                            </div>
-                            <div class="item">
-                              <span>2020-05-22</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="layout-post-content">
-                          <div class="layout-post-item">
-                            
-                            <h1 id="data-generation">Data generation</h1>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            huigz&#39;s Blog
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/AnH4oneMoB/" class="menu gt-a-link">
+                            社会学
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://www.notion.so/Huigz-s-Wiki-Lib-919abbe6cf94493da77b619c64e8ece6" class="menu gt-a-link" target="_blank">
+                            知识库-Huigz Wiki
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            About me
+                        </a>
+                    
+                </div>
+            
+        </div>
+    </div>
+</nav>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    [社会科学调查方法] 获得数据 📃
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-05-22 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <h1 id="data-generation">Data generation</h1>
 <ul>
 <li>primary data</li>
 <li>secondary data</li>
@@ -244,175 +199,54 @@
 <h3 id="6-create-aesthetically-pleasing-layout-and-desig-创造美观的布局和设计">6. Create aesthetically pleasing layout and desig 创造美观的布局和设计</h3>
 <p>美观 简洁 专业</p>
 
-                          </div>
-                        </div>
-                        <div class="layout-post-social">
-                          <div class="item reader">
-                            <div id="/post/she-hui-ke-xue-diao-cha-fang-fa-huo-de-shu-ju/" class="leancloud-visitors view"
-                              data-flag-title="[社会科学调查方法] 获得数据 📃">
-                              <span class="post-meta-item-text">阅读 </span>
-                              <span class="leancloud-visitors-count"></span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="layout-post-navigation">
-                          <div class="navigation-list">
-                            
-                            <div class="post-card row">
-                              
-                              <div class="card-content col-8 col-md-9">
-                                <div class="card-body">
-                                  <div class="header">
-                                    <a href="https://huigz.github.io/xin-li-xue-gui-yin-li-lun-xie-fang-chai-mo-xing/" class="title">
-                                      <h4>心理学归因理论 —协方差模型</h4>
-                                    </a>
-                                  </div>
-                                  <div class="inner d-none d-sm-block">
-                                    <div class="abstract">
-                                      <p>哈罗德·凯利（Harold Kelley）的协变量模型是一种归因理论，人们在其中进行因果推断，以解释为什么其他人和我们自己以某种方式行事。它与社会感知和自我感知有关（Kelley，1973）。</p>
-
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card-footer">
-                                  <div class="item"><span>上一篇</span></div>
-                                  <div class="item">2020-05-31</div>
-                                </div>
-                              </div>
-                              <div class="card-thumb col-4 col-md-3">
-                                <div class="thumb">
-                                  <a href="https://huigz.github.io/xin-li-xue-gui-yin-li-lun-xie-fang-chai-mo-xing/"
-                                    style="background-image: url('https://huigz.github.io/post-images/xin-li-xue-gui-yin-li-lun-xie-fang-chai-mo-xing.jpg');"></a>
-                                </div>
-                              </div>
-                              
-                            </div>
-
-                            <div class="post-card row">
-                              
-                              <div class="card-content col-12">
-                                <div class="card-body">
-                                  <div class="header">
-                                    <a href="https://huigz.github.io/yi-ge-sui-yi-de-se/" class="title">
-                                      <h4>一个随意的 🍭色</h4>
-                                    </a>
-                                  </div>
-                                  <div class="inner">
-                                    <div class="abstract">
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card-footer">
-                                  <div class="item"><span>下一篇</span></div>
-                                  <div class="item">2020-05-12</div>
-                                </div>
-                              </div>
-                              
-                            </div>
-
-                            
-                          </div>
-                        </div>
-
-                        <div class="layout-comments"></div>
-                        
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-lg-2 d-none d-lg-block">
-                      <div class="layout-post-sidebar">
-                        <div class="layout-sidebar-item">
-                          <ul class="markdownIt-TOC">
-<li><a href="#data-generation">Data generation</a>
-<ul>
-<li><a href="#type-of-survey">Type of survey</a>
-<ul>
-<li><a href="#what-is-survey">What is survey?</a></li>
-<li><a href="#type-of-information-collected">Type of information collected</a></li>
-<li><a href="#type-of-survey-2">Type of survey</a></li>
-</ul>
-</li>
-<li><a href="#survey-process">Survey process</a>
-<ul>
-<li><a href="#1-operationalize-concepts-%E6%A6%82%E5%BF%B5%E8%BF%90%E7%94%A8">1. Operationalize concepts 概念运用</a></li>
-<li><a href="#2-formulate-your-questions-%E6%98%8E%E7%A1%AE%E9%97%AE%E9%A2%98">2. Formulate your questions 明确问题</a></li>
-<li><a href="#3-decide-on-response-categories-%E7%A1%AE%E5%AE%9A%E5%9B%9E%E5%BA%94%E7%B1%BB%E5%88%AB">3. Decide on response categories 确定回应类别</a></li>
-<li><a href="#likert-scale-%E6%9D%8E%E5%85%8B%E7%89%B9%E9%87%8F%E8%A1%A8">likert scale 李克特量表</a></li>
-<li><a href="#4-provide-background-information-and-clear-instructions-%E6%8F%90%E4%BE%9B%E8%83%8C%E6%99%AF%E4%BF%A1%E6%81%AF%E5%92%8C%E6%B8%85%E6%99%B0%E7%9A%84%E8%AF%B4%E6%98%8E">4. Provide background information and clear instructions 提供背景信息和清晰的说明</a></li>
-<li><a href="#5-decide-organization-and-length-%E5%86%B3%E5%AE%9A%E7%BB%84%E7%BB%87%E5%92%8C%E9%95%BF%E5%BA%A6">5. Decide organization and length 决定组织和长度</a></li>
-<li><a href="#6-create-aesthetically-pleasing-layout-and-desig-%E5%88%9B%E9%80%A0%E7%BE%8E%E8%A7%82%E7%9A%84%E5%B8%83%E5%B1%80%E5%92%8C%E8%AE%BE%E8%AE%A1">6. Create aesthetically pleasing layout and desig 创造美观的布局和设计</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
+            </article>
         </div>
-      </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://huigz.github.io/yi-ge-sui-yi-de-se/" class="post-title gt-a-link">
+                    一个随意的 🍭色
+                </a>
+            </div>
+        
+
+        
+		
+		
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Call me now</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
     </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://huigz.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
 
-    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+<script>
+    hljs.initHighlightingOnLoad()
+</script>
 
-    	<div class="layout-footer">
-
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-					<div class="footer">
-						<div class="row">
-							<div class="col-12 col-md-9">
-								<div class="footer-copy">
-									
-									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-									<div class="footer-icp d-none d-sm-inline-block">
-										<span class="px-2">⋅</span>
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 d-none d-md-block">
-								<div class="footer-links">
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<script type="text/javascript" src='https://huigz.github.io/media/scripts/main.js'></script>
-	
-
-  </div>
+    </div>
+</div>
 </body>
-
 </html>
