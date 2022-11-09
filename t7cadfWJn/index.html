@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>宗教社会学 | Jmsu&#39;s Blog</title>
+<title>Melon music PC웹사이트 Crawling통해 Artists의 곡 참여 연결망 생성과 분석  | Jmsu&#39;s Blog</title>
 
 <link rel="shortcut icon" href="https://huigz.github.io/favicon.ico?v=1667964452383">
 
@@ -37,11 +37,12 @@
 </script>
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+    
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="/">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -117,94 +118,92 @@
     }
 </script>
 
-        <div class="current-tag-container">
-            <h2 class="title gt-c-content-color-first">
-                #宗教社会学
-            </h2>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    Melon music PC웹사이트 Crawling통해 Artists의 곡 참여 연결망 생성과 분석 
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2022-11-09 ·
+                    </time>
+                    
+                        <a href="https://huigz.github.io/NPAEFpw3x/" class="post-tags">
+                            # 爬虫
+                        </a>
+                    
+                        <a href="https://huigz.github.io/DfoAoPoI8-/" class="post-tags">
+                            # crawling
+                        </a>
+                    
+                        <a href="https://huigz.github.io/MgWORsWaZq/" class="post-tags">
+                            # python
+                        </a>
+                    
+                        <a href="https://huigz.github.io/TuFh1FPOM8/" class="post-tags">
+                            # scrapy
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>Melon music PC웹사이트 Crawling통해 Artists의 곡 참여 연결망 생성과 분석</p>
+<h3 id="사전-분석">사전 분석</h3>
+<p>Melon music의 웹사이트 HTTP Stream분석 통해 API확인</p>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107151936446.png" alt="image-20221107151936446" loading="lazy"></figure>
+<p>멜론의 아티스트 페이지 주소는 https://www.melon.com/artist</p>
+<p>아티스트의 곡 확인하려고 해서 https://www.melon.com/artist/song.htm 사용 [중간 빨간 화살표]</p>
+<p>Params에 Artist의 ID 부여해야 한다. [파란 화살표]</p>
+<p>곡 정보는 Table구조통해 밑 [빨간화살표]에 전시</p>
+<p>연결망 만들기 위해 Artist의 발매 곡 정보아니라 <strong>참여</strong> 정보 필요하다.</p>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107153232731.png" alt="image-20221107153232731" loading="lazy"></figure>
+<p>여기에 멜론은 JS기술 사용해서 데이터 동작적으로 Get하고 표시되는 것이다.</p>
+<p>HTTP Stream분석하면:</p>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107153600749.png" alt="image-20221107153600749" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107153634262.png" alt="image-20221107153634262" loading="lazy"></figure>
+<p>songpaging.htm에서 listType라는 Param통해 곡 정보 장르 조정하는 것 볼 수 있다.</p>
+<p><strong>발매의 값은 F다.</strong></p>
+<p><strong>songpaging.htm의 Response확인:</strong></p>
+<figure data-type="image" tabindex="5"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107154230250.png" alt="image-20221107154230250" loading="lazy"></figure>
+<p>곡명 보면 선정된 Artist(아이유)가 참여했는 곡 확인할 수 있고 곡 원작의 Artist도 확인할 수 있다.</p>
+<p>특이 [빨간 라인]보면  Artist의 ID도 Source에 표시되고 있다.</p>
+<h3 id="crawling의-절차">Crawling의 절차</h3>
+<ol>
+<li>초기 Artist선택</li>
+<li>Artist ID   Crawling Queue에 넣다</li>
+<li>Queue에 있는 Artist Crawling -&gt; 곡명, 원작 데이터 받기</li>
+<li>New Artist ID(참여 곡의 원작)  Crawling Queue에 넣다</li>
+</ol>
+<p><em><strong>Loop(step3, step4 | Until Queue is empty)</strong></em></p>
+<p>언어: Python3</p>
+<p>플랫품: Scrapy</p>
+<h3 id="source">Source</h3>
+<p>https://github.com/Huigz/melonSpider</p>
+<h3 id="result">Result</h3>
+<p>running:</p>
+<pre><code class="language-sh">scrapy crawl melonSpider -o melon.json
+</code></pre>
+<p>file:</p>
+<figure data-type="image" tabindex="6"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221108184949131.png" alt="image-20221108184949131" loading="lazy"></figure>
+
+                </div>
+            </article>
         </div>
-        <div class="post-list-container">
-    <div class="post-inner">
+
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://huigz.github.io/zong-jiao-she-hui-xue-zhi-gu-dian-she-hui-xue-jia-ji-qi-zong-jiao-li-lun/">
-                            <span class="post-title gt-c-content-color-first">宗教社会学[2]之古典社会学家及其宗教理论</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-06-23 ·
-                        </time>
-                        
-                            <a href="https://huigz.github.io/ONw91qbrr/" class="post-tag">
-                                # 孔德
-                            </a>
-                        
-                            <a href="https://huigz.github.io/--GeCu0YI/" class="post-tag">
-                                # 宗教社会学
-                            </a>
-                        
-                            <a href="https://huigz.github.io/ozJXnnVVd/" class="post-tag">
-                                # 马克思
-                            </a>
-                        
-                            <a href="https://huigz.github.io/AnH4oneMoB/" class="post-tag">
-                                # 社会学
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://huigz.github.io/zong-jiao-she-hui-xue-zhi-gu-dian-she-hui-xue-jia-ji-qi-zong-jiao-li-lun/" class="post-feature-image"
-                       style="background-image: url('https://huigz.github.io/post-images/zong-jiao-she-hui-xue-zhi-gu-dian-she-hui-xue-jia-ji-qi-zong-jiao-li-lun.jpg')">
-                    </a>
-                
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://huigz.github.io/FvTJfGWSj/" class="post-title gt-a-link">
+                    “The Distribution of Power in Exchange Networks: Theory and Experimental Results”Review
+                </a>
             </div>
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://huigz.github.io/zong-jiao-she-hui-xue-1ding-yi-he-wei-du/">
-                            <span class="post-title gt-c-content-color-first">宗教社会学[1]定义和维度</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-06-22 ·
-                        </time>
-                        
-                            <a href="https://huigz.github.io/--GeCu0YI/" class="post-tag">
-                                # 宗教社会学
-                            </a>
-                        
-                            <a href="https://huigz.github.io/AnH4oneMoB/" class="post-tag">
-                                # 社会学
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://huigz.github.io/zong-jiao-she-hui-xue-1ding-yi-he-wei-du/" class="post-feature-image"
-                       style="background-image: url('https://huigz.github.io/post-images/zong-jiao-she-hui-xue-1ding-yi-he-wei-du.jpg')">
-                    </a>
-                
-            </div>
+
         
-    </div>
-</div>
-        <div class="pagination-container">
-    
-    
-</div>
+
+        
+
+        
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">Interested in Exchange Theory / SNA and Crawling(Python)</div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>Jmsu&apos;s Blog</title>
-    <updated>2022-11-09T03:22:49.626Z</updated>
+    <updated>2022-11-09T03:27:39.996Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -10,6 +10,52 @@
     <logo>https://huigz.github.io/images/avatar.png</logo>
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Jmsu&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Melon music PC웹사이트 Crawling통해 Artists의 곡 참여 연결망 생성과 분석 ]]></title>
+        <id>https://huigz.github.io/t7cadfWJn/</id>
+        <link href="https://huigz.github.io/t7cadfWJn/">
+        </link>
+        <updated>2022-11-09T04:25:55.000Z</updated>
+        <content type="html"><![CDATA[<p>Melon music PC웹사이트 Crawling통해 Artists의 곡 참여 연결망 생성과 분석</p>
+<h3 id="사전-분석">사전 분석</h3>
+<p>Melon music의 웹사이트 HTTP Stream분석 통해 API확인</p>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107151936446.png" alt="image-20221107151936446" loading="lazy"></figure>
+<p>멜론의 아티스트 페이지 주소는 https://www.melon.com/artist</p>
+<p>아티스트의 곡 확인하려고 해서 https://www.melon.com/artist/song.htm 사용 [중간 빨간 화살표]</p>
+<p>Params에 Artist의 ID 부여해야 한다. [파란 화살표]</p>
+<p>곡 정보는 Table구조통해 밑 [빨간화살표]에 전시</p>
+<p>연결망 만들기 위해 Artist의 발매 곡 정보아니라 <strong>참여</strong> 정보 필요하다.</p>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107153232731.png" alt="image-20221107153232731" loading="lazy"></figure>
+<p>여기에 멜론은 JS기술 사용해서 데이터 동작적으로 Get하고 표시되는 것이다.</p>
+<p>HTTP Stream분석하면:</p>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107153600749.png" alt="image-20221107153600749" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107153634262.png" alt="image-20221107153634262" loading="lazy"></figure>
+<p>songpaging.htm에서 listType라는 Param통해 곡 정보 장르 조정하는 것 볼 수 있다.</p>
+<p><strong>발매의 값은 F다.</strong></p>
+<p><strong>songpaging.htm의 Response확인:</strong></p>
+<figure data-type="image" tabindex="5"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107154230250.png" alt="image-20221107154230250" loading="lazy"></figure>
+<p>곡명 보면 선정된 Artist(아이유)가 참여했는 곡 확인할 수 있고 곡 원작의 Artist도 확인할 수 있다.</p>
+<p>특이 [빨간 라인]보면  Artist의 ID도 Source에 표시되고 있다.</p>
+<h3 id="crawling의-절차">Crawling의 절차</h3>
+<ol>
+<li>초기 Artist선택</li>
+<li>Artist ID   Crawling Queue에 넣다</li>
+<li>Queue에 있는 Artist Crawling -&gt; 곡명, 원작 데이터 받기</li>
+<li>New Artist ID(참여 곡의 원작)  Crawling Queue에 넣다</li>
+</ol>
+<p><em><strong>Loop(step3, step4 | Until Queue is empty)</strong></em></p>
+<p>언어: Python3</p>
+<p>플랫품: Scrapy</p>
+<h3 id="source">Source</h3>
+<p>https://github.com/Huigz/melonSpider</p>
+<h3 id="result">Result</h3>
+<p>running:</p>
+<pre><code class="language-sh">scrapy crawl melonSpider -o melon.json
+</code></pre>
+<p>file:</p>
+<figure data-type="image" tabindex="6"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221108184949131.png" alt="image-20221108184949131" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[“The Distribution of Power in Exchange Networks: Theory and Experimental Results”Review]]></title>
         <id>https://huigz.github.io/FvTJfGWSj/</id>
@@ -784,96 +830,6 @@ CREATE TABLE EMP(
 <li>规范功能主义</li>
 <li>将人类过渡社会化</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[社会心理学之态度和说服]]></title>
-        <id>https://huigz.github.io/she-hui-xin-li-xue-zhi-tai-du-he-shuo-fu/</id>
-        <link href="https://huigz.github.io/she-hui-xin-li-xue-zhi-tai-du-he-shuo-fu/">
-        </link>
-        <updated>2020-06-18T01:58:22.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="社会心理学-态度和态度的变化">社会心理学 态度和态度的变化</h1>
-<h2 id="什么是态度">什么是态度？</h2>
-<blockquote>
-<p>对事物和情况作出的反应产生影响的精神状态(Allport, 1935)</p>
-</blockquote>
-<blockquote>
-<p>人们的事物的感觉，即喜欢或讨厌的感情(Bettinhaus &amp; Cody, 1987)</p>
-</blockquote>
-<blockquote>
-<p>个人对对象的所有信念评价(Fishbein &amp; Ajzen, 1975)</p>
-</blockquote>
-<p>态度的作用：</p>
-<ul>
-<li>
-<p>通过把握态度可对行为作出预测</p>
-</li>
-<li>
-<p>通过了解态度的作用方式可有助于改变行为</p>
-</li>
-</ul>
-<p>（态度是对事物作出特定反应前的准备）</p>
-<h2 id="态度的形成和测定">态度的形成和测定</h2>
-<h3 id="1根据学习的态度形成">1.根据学习的态度形成</h3>
-<p><strong>古典条件化- 联合学习</strong></p>
-<p>无条件刺激 -&gt; 无条件反应</p>
-<p>（条件）中间刺激 -x-&gt; 无反应</p>
-<p>无条件刺激+（条件）中间刺激 -&gt; 条件反应</p>
-<p><strong>社会学习</strong>：</p>
-<p>模仿有权威，受人尊重，影响力大的人的态度。</p>
-<p>受环境的刺激造成的间接性态度学习。</p>
-<h3 id="2通过心理一致性形成态度">2.通过心理一致性形成态度</h3>
-<h4 id="平衡理论heider-1946">平衡理论(Heider, 1946)</h4>
-<blockquote>
-<p>认知要素试图保持内观（内部）一致性的状态 -&gt; 平衡</p>
-</blockquote>
-<p><strong>认知平衡</strong>的状态是稳定且<strong>愉快</strong>的</p>
-<p><strong>认知不平衡</strong>的状态是<strong>紧张的</strong></p>
-<p>在认知不平衡的状态下，人为了消除紧张感而努力。而这种努力，意味着态度的改变。(Festinger, 1957)</p>
-<h4 id="认知失调导致态度的改变">认知失调导致态度的改变</h4>
-<p><strong>态度确定</strong>情况下：根据认知失调<strong>进行合理化</strong></p>
-<ul>
-<li>认知失调导致紧张，不便状态，试图调整至协调状态</li>
-<li>为了减少认知失调，从而改变自身行为，或(信念)态度。</li>
-</ul>
-<p>为了态度和行动的符合，从而改变态度(改变行为困难的情况下)</p>
-<p><strong>态度不确定</strong>的情况：根据自我感知理论</p>
-<p>即通过自我的外显行为，确定自我的态度</p>
-<p><strong>平衡与非平衡的鉴定:</strong></p>
-<p>P - O - X 理论</p>
-<p>只有在三个条件皆为正的情况和两负号一正的情况下，才能存在认知平衡否则即为认知不平衡。</p>
-<p>图</p>
-<h4 id="期待-价值-理论">期待-价值 理论</h4>
-<blockquote>
-<p>通过计算利弊 获得态度</p>
-</blockquote>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">态</mi><mi mathvariant="normal">度</mi><mo>=</mo><mo>∑</mo><mrow><mi mathvariant="normal">期</mi><mi mathvariant="normal">待</mi><mo>(</mo><mi mathvariant="normal">信</mi><mi mathvariant="normal">念</mi><mo>)</mo></mrow><mo>×</mo><mi mathvariant="normal">价</mi><mi mathvariant="normal">值</mi><mo>(</mo><mi mathvariant="normal">评</mi><mi mathvariant="normal">价</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">态度 = \sum{期待(信念)}\times价值(评价)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord cjk_fallback">态</span><span class="mord cjk_fallback">度</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.6000100000000002em;vertical-align:-0.55001em;"></span><span class="mop op-symbol large-op" style="position:relative;top:-0.000004999999999977245em;">∑</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord cjk_fallback">期</span><span class="mord cjk_fallback">待</span><span class="mopen">(</span><span class="mord cjk_fallback">信</span><span class="mord cjk_fallback">念</span><span class="mclose">)</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">价</span><span class="mord cjk_fallback">值</span><span class="mopen">(</span><span class="mord cjk_fallback">评</span><span class="mord cjk_fallback">价</span><span class="mclose">)</span></span></span></span></span></p>
-<p>期待 ： 个人对对象特定属性的主观期待</p>
-<p>价值 ： 对对象属性的评价</p>
-<h4 id="理性行为理论-ajzen-fishbein-1980-1975">理性行为理论 (Ajzen &amp; Fishbein, 1980, 1975)</h4>
-<ul>
-<li>决定行动时，考量行动结果对自身的影响</li>
-<li>针对以前做过的行动时，考量他人对自我的看法</li>
-</ul>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">个</mi><mi mathvariant="normal">人</mi><mi mathvariant="normal">态</mi><mi mathvariant="normal">度</mi><mo>+</mo><mi mathvariant="normal">主</mi><mi mathvariant="normal">观</mi><mi mathvariant="normal">规</mi><mi mathvariant="normal">范</mi><mo>=</mo><mi mathvariant="normal">行</mi><mi mathvariant="normal">动</mi><mi mathvariant="normal">意</mi><mi mathvariant="normal">图</mi></mrow><annotation encoding="application/x-tex">个人态度+主观规范=行动意图
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">人</span><span class="mord cjk_fallback">态</span><span class="mord cjk_fallback">度</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord cjk_fallback">主</span><span class="mord cjk_fallback">观</span><span class="mord cjk_fallback">规</span><span class="mord cjk_fallback">范</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord cjk_fallback">行</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">意</span><span class="mord cjk_fallback">图</span></span></span></span></span></p>
-<p>其中 个人态度通过期待价值理论的公式计算。</p>
-<h2 id="说服导致的态度变化">说服导致的态度变化</h2>
-<h3 id="推敲可能性模型elm">推敲可能性模型ELM</h3>
-<p>Elaboration Likelihood Model</p>
-<p>或称为慎思可能模式、详尽可能性模型、精细可能性模型，是描述态度改变的说服理论模型</p>
-<blockquote>
-<p>推敲可能性模型认为信息处理的两种极端方式为中心途径（central route，中央路径、中枢路径或核心途径）以及外围途径（peripheral route，边陲路径、边缘路径或周边路径）</p>
-</blockquote>
-<ul>
-<li>中央途径：个人具有高度的动机和能力时，个人会考虑和推敲劝说情况中的各个方面，并对论点的强度与质量进行深度分析，以决定是否改变对事物的态度。</li>
-<li>周边途径：个人之动机与能力相对较弱时，个人会满足于当前的认知，不愿耗费更多精力对信息加以分析，更容易被表观特征（如说客的可信度与专业程度）所说服。</li>
-</ul>
-<p><strong>途径的选择：</strong></p>
-<p>涉入程度（Involvement）高时，处理资讯时倾向于采用中央路径的模式，亦即根据资讯的内容，经过审慎思考之后做出决策。因此涉入程度高者因为认知的改变，而产生了信念与态度改变，最后导致行为改变。而当涉入程度低时，则会倾向于根据事物的周边属性与外在线索进行资讯处理。因此涉入程度低者信念改变后，先改变了行为，最后才导致态度的转变。</p>
-<p><strong>涉入程度高 -&gt; 中央途径 -&gt; 系统分析 -&gt; 改变态度 -&gt; 改变行为</strong></p>
-<p><strong>涉入程度低 -&gt; 周围途径 -&gt; 估量法 -&gt; 改变行为 -&gt; 改变态度</strong></p>
 ]]></content>
     </entry>
 </feed>
