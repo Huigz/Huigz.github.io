@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>Jmsu&apos;s Blog</title>
-    <updated>2022-11-09T16:31:57.637Z</updated>
+    <updated>2022-11-09T16:32:25.984Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -11,11 +11,11 @@
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Jmsu&apos;s Blog</rights>
     <entry>
-        <title type="html"><![CDATA[melonSpider 데이터 처리 과 그래프 생성 (.ipynb) ]]></title>
+        <title type="html"><![CDATA[melonSpider 데이터 처리와 그래프 생성 (.ipynb) ]]></title>
         <id>https://huigz.github.io/XKVwoise2/</id>
         <link href="https://huigz.github.io/XKVwoise2/">
         </link>
-        <updated>2022-11-09T14:06:44.000Z</updated>
+        <updated>2022-11-09T15:06:44.000Z</updated>
         <summary type="html"><![CDATA[<p>melonSpider Project ：<a href="/t7cadfWJn">click here</a></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>melonSpider Project ：<a href="/t7cadfWJn">click here</a></p>
