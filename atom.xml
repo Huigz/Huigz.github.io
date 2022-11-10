@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>Jmsu&apos;s Blog</title>
-    <updated>2022-11-09T16:32:25.984Z</updated>
+    <updated>2022-11-10T14:51:45.114Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -11,11 +11,22 @@
     <icon>https://huigz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Jmsu&apos;s Blog</rights>
     <entry>
+        <title type="html"><![CDATA[Python folium사용 전국 대학 위치 표시]]></title>
+        <id>https://huigz.github.io/84K3HXiMY/</id>
+        <link href="https://huigz.github.io/84K3HXiMY/">
+        </link>
+        <updated>2022-11-10T17:39:28.000Z</updated>
+        <content type="html"><![CDATA[<p>View jupyter Notebook<br>
+<a href="/KRUAgeo_prj2.html">Enter</a></p>
+<iframe style="width:100%; max-height:800px; min-height:550px" src="/KRUAgeo_prj2.html">
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[melonSpider 데이터 처리와 그래프 생성 (.ipynb) ]]></title>
         <id>https://huigz.github.io/XKVwoise2/</id>
         <link href="https://huigz.github.io/XKVwoise2/">
         </link>
-        <updated>2022-11-09T15:06:44.000Z</updated>
+        <updated>2022-11-09T16:06:44.000Z</updated>
         <summary type="html"><![CDATA[<p>melonSpider Project ：<a href="/t7cadfWJn">click here</a></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>melonSpider Project ：<a href="/t7cadfWJn">click here</a></p>
@@ -27,20 +38,7 @@ import networkx as ntx
 df.head()
 </code></pre>
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-<pre><code>.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-</code></pre>
-</style>
-<table border="1" class="dataframe">
+<table>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -107,20 +105,6 @@ dtype: object
 <pre><code class="language-python">df = df.dropna(subset=['withID'])
 df.head()
 </code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-<pre><code>.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-</code></pre>
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -175,24 +159,9 @@ df.head()
     </tr>
   </tbody>
 </table>
-</div>
 <pre><code class="language-python">df['target'] = df['withID'].str.split(',')
 df.head()
 </code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-<pre><code>.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-</code></pre>
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -253,7 +222,6 @@ df.head()
     </tr>
   </tbody>
 </table>
-</div>
 <pre><code class="language-python">source = df.artistID
 target = df.target
 </code></pre>
@@ -917,54 +885,6 @@ CREATE TABLE EMP(
 <p>引用</p>
 <p>社会学理论之马克思,<a href="https://huigz.github.io/post/gu-dian-she-hui-xue-li-lun-zhi-ma-ke-si/#%E9%A9%AC%E5%85%8B%E6%80%9D%E5%94%AF%E7%89%A9%E8%AE%BA%E7%9A%84%E5%8E%86%E5%8F%B2">huigz's blog 马克思唯物主义</a><br>
 马克思,1845,<a href="https://www.marxists.org/chinese/marx/marxist.org-chinese-marx-1845.htm">关于费尔巴哈的提纲</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[宗教社会学[1]定义和维度]]></title>
-        <id>https://huigz.github.io/zong-jiao-she-hui-xue-1ding-yi-he-wei-du/</id>
-        <link href="https://huigz.github.io/zong-jiao-she-hui-xue-1ding-yi-he-wei-du/">
-        </link>
-        <updated>2020-06-22T08:33:27.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="宗教社会学之定义和维度">宗教社会学之定义和维度</h1>
-<h2 id="宗教的定义">宗教的定义</h2>
-<ul>
-<li>实体定义</li>
-<li>功能定义</li>
-</ul>
-<p><em>实体定义</em> 关注宗教的<strong>成分</strong>,<strong>结构</strong>(即宗教是什么？)，<em>功能定义</em> 关注宗教的<strong>效用</strong>(即什么宗教？)</p>
-<p><strong>宗教的实际定义</strong></p>
-<ul>
-<li>将宗教固有的<strong>神圣性</strong>(sacredness)和其他因素作为定义的核心</li>
-</ul>
-<p>缺陷:受到了<em>自民族中心主义</em> 批判</p>
-<p><strong>宗教的功能定义</strong></p>
-<ul>
-<li>将宗教的<strong>意义</strong>和<strong>正体性(社会认同)</strong>，<strong>社会整合</strong>等效用</li>
-</ul>
-<p>可以避免<em>自民族中心主义</em> 批判</p>
-<p>缺陷:过度强调宗教的功能性而被批判。</p>
-<p>有时被成为<em>还原理论</em></p>
-<p><strong>狭义的宗教定义</strong></p>
-<p>一般来讲：<br>
-宗教的<strong>实际定义</strong>为<strong>狭义定义</strong></p>
-<p>宗教的<strong>功能定义</strong>为<strong>广义定义</strong></p>
-<p>这并不是一定的，有些的功能定义也讨论了宗教活动的范围，一些实际定义也广义的包含了关于世界观，生活意义的解释和实践</p>
-<p><strong>宗教需要定义吗？</strong></p>
-<p>宗教的一般定义忽略了每种宗教各自固有的，活跃的，有脉络的特性。</p>
-<blockquote>
-<p>在研究的结论部分尝试定义 -韦伯</p>
-</blockquote>
-<h2 id="宗教的维度">宗教的维度</h2>
-<p>美国宗教社会学家 <em>罗德尼·斯塔克</em> 和 <em>查尔斯·格洛克</em> 提出了<strong>宗教承诺</strong>（religious commitment）<strong>的五个维度</strong></p>
-<ul>
-<li>信仰：宗教成员认为是真实的某种有组织的观念</li>
-<li>行动：礼节（正式的宗教行动）和祈祷（形式化和个人的宗教行动）</li>
-<li>经历：个人的宗教经历</li>
-<li>知识：宗教成员应具备的关于教义，礼节的知识</li>
-<li>影响：宗教对个人生活产生影响</li>
-</ul>
-<p>尽管宗教维度看起来过于关注个人层面，但同样适用于对宗教团体的研究</p>
-<p>对于社会学家来说, 对特定宗教的分析<strong>不应</strong>仅仅<strong>停留在官方组织的层面</strong>，<strong>不应忽略</strong>宗教的<strong>经验层面</strong>，<strong>没有理由考虑宗教内部成员和外部人们的立场</strong></p>
 ]]></content>
     </entry>
 </feed>
