@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>Jmsu&apos;s Blog</title>
-    <updated>2022-11-10T15:33:05.463Z</updated>
+    <updated>2022-11-10T15:44:00.503Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -15,8 +15,8 @@
         <id>https://huigz.github.io/84K3HXiMY/</id>
         <link href="https://huigz.github.io/84K3HXiMY/">
         </link>
-        <updated>2022-11-10T17:39:28.000Z</updated>
-        <content type="html"><![CDATA[<p>View jupyter Notebook<br>
+        <updated>2022-11-10T19:39:28.000Z</updated>
+        <content type="html"><![CDATA[<p>View jupyter Notebook source file (.ipynb)<br>
 <a href="/KRUAgeo_prj2.html">Enter</a></p>
 <iframe style="width:100%; max-height:800px; min-height:550px" src="/KRUAgeo_prj2.html">
 ]]></content>
@@ -26,12 +26,12 @@
         <id>https://huigz.github.io/XKVwoise2/</id>
         <link href="https://huigz.github.io/XKVwoise2/">
         </link>
-        <updated>2022-11-09T18:06:44.000Z</updated>
+        <updated>2022-11-09T19:06:44.000Z</updated>
         <summary type="html"><![CDATA[<p>melonSpider Project ：<a href="/t7cadfWJn">click here</a></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>melonSpider Project ：<a href="/t7cadfWJn">click here</a></p>
 <!-- more -->
-<p>View jupyter Notebook<br>
+<p>View jupyter Notebook souce file (.ipynb)<br>
 <a href="/csv_handle.html">Enter</a></p>
 <iframe style="width:100%; max-height:800px; min-height:550px" src="/csv_handle.html">
 ]]></content>
