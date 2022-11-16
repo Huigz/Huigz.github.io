@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huigz.github.io</id>
     <title>Jmsu&apos;s Blog</title>
-    <updated>2022-11-16T01:05:24.501Z</updated>
+    <updated>2022-11-16T02:28:09.199Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huigz.github.io"/>
     <link rel="self" href="https://huigz.github.io/atom.xml"/>
@@ -50,8 +50,11 @@
         <id>https://huigz.github.io/t7cadfWJn/</id>
         <link href="https://huigz.github.io/t7cadfWJn/">
         </link>
-        <updated>2022-11-09T04:25:55.000Z</updated>
+        <updated>2022-11-09T08:25:55.000Z</updated>
         <content type="html"><![CDATA[<p>Melon music PC웹사이트 Crawling통해 Artists의 곡 참여 연결망 생성과 분석</p>
+<form method="get" action="/datas/melon.csv"> 
+    <button type="submit" class="bg-green-500 py-5 px-10 font-serif text-white">Download .csv File</button>
+</form>
 <h3 id="사전-분석">사전 분석</h3>
 <p>Melon music의 웹사이트 HTTP Stream분석 통해 API확인</p>
 <figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/Huigz/pics/main/image-20221107151936446.png" alt="image-20221107151936446" loading="lazy"></figure>
