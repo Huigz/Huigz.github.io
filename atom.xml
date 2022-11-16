@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://huigz.github.io</id>
+    <id>https://blog.jmsu.me</id>
     <title>Jmsu&apos;s Blog</title>
-    <updated>2022-11-16T02:28:09.199Z</updated>
+    <updated>2022-11-16T05:24:09.195Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://huigz.github.io"/>
-    <link rel="self" href="https://huigz.github.io/atom.xml"/>
+    <link rel="alternate" href="https://blog.jmsu.me"/>
+    <link rel="self" href="https://blog.jmsu.me/atom.xml"/>
     <subtitle>Interested in Exchange Theory / SNA and Crawling(Python)</subtitle>
-    <logo>https://huigz.github.io/images/avatar.png</logo>
-    <icon>https://huigz.github.io/favicon.ico</icon>
+    <logo>https://blog.jmsu.me/images/avatar.png</logo>
+    <icon>https://blog.jmsu.me/favicon.ico</icon>
     <rights>All rights reserved 2022, Jmsu&apos;s Blog</rights>
     <entry>
         <title type="html"><![CDATA[Huawei twitter social netowrk 통계 분석]]></title>
-        <id>https://huigz.github.io/IgOWaE0V0/</id>
-        <link href="https://huigz.github.io/IgOWaE0V0/">
+        <id>https://blog.jmsu.me/IgOWaE0V0/</id>
+        <link href="https://blog.jmsu.me/IgOWaE0V0/">
         </link>
         <updated>2022-11-16T03:00:18.000Z</updated>
         <content type="html"><![CDATA[<p>.ipynb:</p>
@@ -21,8 +21,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Python folium사용 전국 대학 위치 표시]]></title>
-        <id>https://huigz.github.io/84K3HXiMY/</id>
-        <link href="https://huigz.github.io/84K3HXiMY/">
+        <id>https://blog.jmsu.me/84K3HXiMY/</id>
+        <link href="https://blog.jmsu.me/84K3HXiMY/">
         </link>
         <updated>2022-11-10T21:39:28.000Z</updated>
         <content type="html"><![CDATA[<p>View jupyter Notebook source file (.ipynb)<br>
@@ -32,8 +32,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[melonSpider 데이터 처리와 그래프 생성 (.ipynb) ]]></title>
-        <id>https://huigz.github.io/XKVwoise2/</id>
-        <link href="https://huigz.github.io/XKVwoise2/">
+        <id>https://blog.jmsu.me/XKVwoise2/</id>
+        <link href="https://blog.jmsu.me/XKVwoise2/">
         </link>
         <updated>2022-11-09T21:06:44.000Z</updated>
         <summary type="html"><![CDATA[<p>melonSpider Project ：<a href="/t7cadfWJn">click here</a></p>
@@ -47,8 +47,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Melon music PC웹사이트 Crawling통해 Artists의 곡 참여 연결망 생성과 분석 ]]></title>
-        <id>https://huigz.github.io/t7cadfWJn/</id>
-        <link href="https://huigz.github.io/t7cadfWJn/">
+        <id>https://blog.jmsu.me/t7cadfWJn/</id>
+        <link href="https://blog.jmsu.me/t7cadfWJn/">
         </link>
         <updated>2022-11-09T08:25:55.000Z</updated>
         <content type="html"><![CDATA[<p>Melon music PC웹사이트 Crawling통해 Artists의 곡 참여 연결망 생성과 분석</p>
@@ -96,8 +96,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[“The Distribution of Power in Exchange Networks: Theory and Experimental Results”Review]]></title>
-        <id>https://huigz.github.io/FvTJfGWSj/</id>
-        <link href="https://huigz.github.io/FvTJfGWSj/">
+        <id>https://blog.jmsu.me/FvTJfGWSj/</id>
+        <link href="https://blog.jmsu.me/FvTJfGWSj/">
         </link>
         <updated>2022-11-09T04:20:07.000Z</updated>
         <content type="html"><![CDATA[<p>“The Distribution of Power in Exchange Networks: Theory and Experimental Results”Review</p>
@@ -189,8 +189,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[📑Database概论 SQL_DDL]]></title>
-        <id>https://huigz.github.io/GrCoNW4UL/</id>
-        <link href="https://huigz.github.io/GrCoNW4UL/">
+        <id>https://blog.jmsu.me/GrCoNW4UL/</id>
+        <link href="https://blog.jmsu.me/GrCoNW4UL/">
         </link>
         <updated>2020-12-08T07:29:27.000Z</updated>
         <summary type="html"><![CDATA[<p>Database概论笔记 - SQL_DDL</p>
@@ -432,8 +432,8 @@ CREATE TABLE EMP(
     </entry>
     <entry>
         <title type="html"><![CDATA[Theories of migration ]]></title>
-        <id>https://huigz.github.io/LWQkNc_Jl/</id>
-        <link href="https://huigz.github.io/LWQkNc_Jl/">
+        <id>https://blog.jmsu.me/LWQkNc_Jl/</id>
+        <link href="https://blog.jmsu.me/LWQkNc_Jl/">
         </link>
         <updated>2020-09-03T15:17:28.000Z</updated>
         <summary type="html"><![CDATA[<p>Review of &quot;Theories of International migration: A Review and Appraisal&quot;(1993)</p>
@@ -485,8 +485,8 @@ CREATE TABLE EMP(
     </entry>
     <entry>
         <title type="html"><![CDATA[Python Tips]]></title>
-        <id>https://huigz.github.io/SwzM84GPe/</id>
-        <link href="https://huigz.github.io/SwzM84GPe/">
+        <id>https://blog.jmsu.me/SwzM84GPe/</id>
+        <link href="https://blog.jmsu.me/SwzM84GPe/">
         </link>
         <updated>2020-07-26T18:30:34.000Z</updated>
         <summary type="html"><![CDATA[<p>这里会包含Python的细节或Tips 并会不断更新迭代</p>
@@ -498,8 +498,8 @@ CREATE TABLE EMP(
     </entry>
     <entry>
         <title type="html"><![CDATA[Python基础入门教程]]></title>
-        <id>https://huigz.github.io/bsHIn6Jga/</id>
-        <link href="https://huigz.github.io/bsHIn6Jga/">
+        <id>https://blog.jmsu.me/bsHIn6Jga/</id>
+        <link href="https://blog.jmsu.me/bsHIn6Jga/">
         </link>
         <updated>2020-07-03T17:56:54.000Z</updated>
         <content type="html"><![CDATA[<p><a href="https://www.notion.so/Python-45b7cedab27744fe9b94156ecc4d8f65">点击进入</a></p>
@@ -507,8 +507,8 @@ CREATE TABLE EMP(
     </entry>
     <entry>
         <title type="html"><![CDATA[古典社会学理论之马克思·韦伯]]></title>
-        <id>https://huigz.github.io/R1_jNpDHI/</id>
-        <link href="https://huigz.github.io/R1_jNpDHI/">
+        <id>https://blog.jmsu.me/R1_jNpDHI/</id>
+        <link href="https://blog.jmsu.me/R1_jNpDHI/">
         </link>
         <updated>2020-06-23T21:47:29.000Z</updated>
         <summary type="html"><![CDATA[<p>韦伯对社会学是否有可能促进社会进步持怀疑态度，他认为社会学的主要作用是支持历史研究。(这并不意味着韦伯将人类寻求知识的活动毫无意义)</p>
